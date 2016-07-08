@@ -1,0 +1,7340 @@
+﻿$axure.loadCurrentPage({
+  "url":"病人详细页.html",
+  "generationDate":new Date(1467783358693.45),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable",
+"username",
+"account",
+"home",
+"dept"],
+  "page":{
+    "packageId":"e41fca7370b04d93a892ce9ca290f07c",
+    "type":"Axure:Page",
+    "name":"病人详细页",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"8d09f8e5209c4f54b3b8efd2ed956a9c",
+          "label":"",
+          "type":"referenceDiagramObject",
+          "styleType":"referenceDiagramObject",
+          "visible":true,
+          "style":{
+},
+          "adaptiveStyles":{
+},
+          "masterId":"2d7d071180014c38b40748006bf62620"},
+{
+          "id":"0ab764ee5ed14c3384d4811b8358423a",
+          "label":"",
+          "type":"referenceDiagramObject",
+          "styleType":"referenceDiagramObject",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":44.5,
+              "y":130}},
+          "adaptiveStyles":{
+},
+          "masterId":"1ea34248f44d492085137f67760438e1"},
+{
+          "id":"7c086f36f0ec41c3bf5305fa05a92494",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Applied Font Regular', 'Applied Font'",
+            "fontSize":"14px",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "location":{
+              "x":146,
+              "y":138},
+            "size":{
+              "width":43,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"1c844d65ce91444da64ebdaa8038f036",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Applied Font Regular', 'Applied Font'",
+                "fontSize":"14px",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "location":{
+                  "x":146,
+                  "y":138},
+                "size":{
+                  "width":43,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"fd88358117fc4f2890ab6da7faf681c7",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "fontName":"'Applied Font Regular', 'Applied Font'",
+            "location":{
+              "x":54,
+              "y":140},
+            "size":{
+              "width":36,
+              "height":30}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"1f60feefa8cf43a1a1d9f66c14d6f972",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Applied Font Regular', 'Applied Font'",
+                "location":{
+                  "x":54,
+                  "y":140},
+                "size":{
+                  "width":36,
+                  "height":30}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"病人详情页返回按钮单击时<br> (If 值于 account ≠ &quot;扫描&quot; 和 值于 account ≠ &quot;消息&quot;)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"&&",
+                    "leftExpr":{
+                      "exprType":"binaryOp",
+                      "op":"!=",
+                      "leftExpr":{
+                        "exprType":"fcall",
+                        "functionName":"GetGlobalVariableValue",
+                        "arguments":[{
+                            "exprType":"globalVariableLiteral",
+                            "variableName":"account"}]},
+                      "rightExpr":{
+                        "exprType":"stringLiteral",
+                        "value":"扫描",
+                        "stos":[]}},
+                    "rightExpr":{
+                      "exprType":"binaryOp",
+                      "op":"!=",
+                      "leftExpr":{
+                        "exprType":"fcall",
+                        "functionName":"GetGlobalVariableValue",
+                        "arguments":[{
+                            "exprType":"globalVariableLiteral",
+                            "variableName":"account"}]},
+                      "rightExpr":{
+                        "exprType":"stringLiteral",
+                        "value":"消息",
+                        "stos":[]}}},
+                  "actions":[{
+                      "action":"setFunction",
+                      "description":"设置 值于 home = &quot;病人&quot;",
+                      "expr":{
+                        "exprType":"block",
+                        "subExprs":[{
+                            "exprType":"fcall",
+                            "functionName":"SetGlobalVariableValue",
+                            "arguments":[{
+                                "exprType":"globalVariableLiteral",
+                                "variableName":"home"},
+{
+                                "exprType":"stringLiteral",
+                                "value":"病人",
+                                "stos":[]}]}]}},
+{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 Home",
+                      "target":{
+                        "targetType":"page",
+                        "url":"home.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]},
+{
+                  "description":"用例 1<br> (Else If 值于 account 等于 &quot;扫描&quot;)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetGlobalVariableValue",
+                      "arguments":[{
+                          "exprType":"globalVariableLiteral",
+                          "variableName":"account"}]},
+                    "rightExpr":{
+                      "exprType":"stringLiteral",
+                      "value":"扫描",
+                      "stos":[]}},
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 扫描病人腕带界面",
+                      "target":{
+                        "targetType":"page",
+                        "url":"扫描病人腕带界面.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]},
+{
+                  "description":"用例 2<br> (Else If 值于 account 等于 &quot;消息&quot;)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetGlobalVariableValue",
+                      "arguments":[{
+                          "exprType":"globalVariableLiteral",
+                          "variableName":"account"}]},
+                    "rightExpr":{
+                      "exprType":"stringLiteral",
+                      "value":"消息",
+                      "stos":[]}},
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 消息页",
+                      "target":{
+                        "targetType":"page",
+                        "url":"消息页.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/login/backimage1_u57.png"}},
+{
+          "id":"e02e69c5d8dc4dcaa814eb2e0f1b3d81",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Applied Font Regular', 'Applied Font'",
+            "fontSize":"12px",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "location":{
+              "x":140,
+              "y":158},
+            "size":{
+              "width":55,
+              "height":15}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"b5efd011a3fe4f93b9b1fa3f69dcf497",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Applied Font Regular', 'Applied Font'",
+                "fontSize":"12px",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "location":{
+                  "x":140,
+                  "y":158},
+                "size":{
+                  "width":55,
+                  "height":15}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"6ebbceceb35944f5a5d0458b81eff51b",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'Applied Font Regular', 'Applied Font'",
+            "location":{
+              "x":44,
+              "y":180},
+            "size":{
+              "width":360,
+              "height":105},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFFCCCCCC}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"b381fd2399c44764aa41109f1af6da6a",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Applied Font Regular', 'Applied Font'",
+                "location":{
+                  "x":44,
+                  "y":180},
+                "size":{
+                  "width":360,
+                  "height":105},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFCCCCCC}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/生命体征采集/u50.png"}},
+{
+          "id":"73a1da74b36d4e38a2cb3226d5b07cac",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "fontName":"'Applied Font Regular', 'Applied Font'",
+            "location":{
+              "x":49,
+              "y":185},
+            "size":{
+              "width":95,
+              "height":95}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"3927b87eab164734aab78751d4335b86",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Applied Font Regular', 'Applied Font'",
+                "location":{
+                  "x":49,
+                  "y":185},
+                "size":{
+                  "width":95,
+                  "height":95}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/login/login_icon_u12.png"}},
+{
+          "id":"e490989a764a407ebf8de76a9c8b101b",
+          "label":"姓名",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Applied Font Regular', 'Applied Font'",
+            "location":{
+              "x":164,
+              "y":194},
+            "size":{
+              "width":40,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"616293b804fe44b1a2b476116445eda0",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Applied Font Regular', 'Applied Font'",
+                "location":{
+                  "x":164,
+                  "y":194},
+                "size":{
+                  "width":40,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"cf09e47edf32448091b19d08c049986c",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Applied Font Regular', 'Applied Font'",
+            "location":{
+              "x":264,
+              "y":194},
+            "size":{
+              "width":28,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"1c7313bc422a46d5b2656317e7951999",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Applied Font Regular', 'Applied Font'",
+                "location":{
+                  "x":264,
+                  "y":194},
+                "size":{
+                  "width":28,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"d13e7280c7474ee592816abca564a7f8",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Applied Font Regular', 'Applied Font'",
+            "location":{
+              "x":164,
+              "y":225},
+            "size":{
+              "width":28,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"8c000841268d403db494a18d7a0dce8a",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Applied Font Regular', 'Applied Font'",
+                "location":{
+                  "x":164,
+                  "y":225},
+                "size":{
+                  "width":28,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"a5fc9a1775cd4b16bad762f086388974",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Applied Font Regular', 'Applied Font'",
+            "location":{
+              "x":229,
+              "y":194},
+            "size":{
+              "width":14,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"628c91ac13164fd5a8f29afdf8067176",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Applied Font Regular', 'Applied Font'",
+                "location":{
+                  "x":229,
+                  "y":194},
+                "size":{
+                  "width":14,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"80d7170edfef46298a878a5769283701",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Applied Font Regular', 'Applied Font'",
+            "location":{
+              "x":264,
+              "y":225},
+            "size":{
+              "width":53,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"642c6ac039d945368638559d298ff731",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Applied Font Regular', 'Applied Font'",
+                "location":{
+                  "x":264,
+                  "y":225},
+                "size":{
+                  "width":53,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"01f917768118496ca45438c1096bf106",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'Applied Font Regular', 'Applied Font'",
+            "location":{
+              "x":164,
+              "y":254},
+            "size":{
+              "width":66,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"7b1610504a9e4a7c9a3772c4a4a5de7e",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'Applied Font Regular', 'Applied Font'",
+                "location":{
+                  "x":164,
+                  "y":254},
+                "size":{
+                  "width":66,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"7040ece1d4d545ef82e1b8616ed454fd",
+          "label":"医嘱面板",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":44,
+              "y":325},
+            "size":{
+              "width":360,
+              "height":375}},
+          "adaptiveStyles":{
+},
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"50ebfe19f22c44fd919ae1884cec043a",
+              "label":"全部",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"b5f09c9a4140425f8b168a8c9632c073",
+                  "label":"口服条目",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"f8987b21a979416c9e1fbec8b097f9d7",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/口服条目_u36.png"}},
+{
+                  "id":"e95dfa2691c64501b6f47be53e27ae32",
+                  "label":"输液条目",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":45},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"d98abe1beea444a1babd913df87cb699",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":45},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"f2e55e8b160548959980b59a3380c761",
+                  "label":"针剂条目",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":90},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"40513e92e77f490a9fbc061408b7ff98",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":90},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"fe8ea39cbd8d403c8c09f0d7a88bc3a8",
+                  "label":"其他条目",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":135},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"73e88b13c22c4bf089c4a051d22fbdc6",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":135},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"f9182a8db27a4982af7ce64494fc8229",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":13},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"ecd452dd02ed49bfa2b33b1d5835b271",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":13},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"42e92a6844a441e6b520df7c38c62df4",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":13},
+                    "size":{
+                      "width":35,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"334f726eb5374bb2a2ec8a445dc79bbb",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":13},
+                        "size":{
+                          "width":35,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"f17664de92df4d6ebdc91894d9a7e719",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":12.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"609944ad7759417c8ad1c09c0b9f8851",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":12.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"2eafc5f63af940a5885079275dd098fe",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":58},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"91261609cdf94023ba001a67e0504cd1",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":58},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"45af57de158f47d49a34d86de43ed141",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":58},
+                    "size":{
+                      "width":35,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"af5eae2b1248492682e2d9fa44d5b5be",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":58},
+                        "size":{
+                          "width":35,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"70911e30dbe245b49623d727735aa974",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":57.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"85e094045a1a41088a80aa8198b159b5",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":57.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"39eda19c54304618971286d83794057e",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":102},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"d1f33adebbcc4e67a2afbab515a0e128",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":102},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"69ee5022e1b24199a94f0653583fdfdd",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":102},
+                    "size":{
+                      "width":35,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"b5605d86f7d64bbca1cdb00d7d2852be",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":102},
+                        "size":{
+                          "width":35,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"f486236e96c44d389c07d3298d81d05b",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":102.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"90f104dc13da4e959a5352a5b2f8421c",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":102.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"5a5b2f6e99f94adcac26d465e82764eb",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":148},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"55af9e89290140d79fac578cf3ee7779",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":148},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"7380d50f6c4942368aa1af4c3a5e8b4b",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":148},
+                    "size":{
+                      "width":35,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"241b2ef7b9d14b8aa99c290719ac2736",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":148},
+                        "size":{
+                          "width":35,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"3fdb1b092ec04e16951218a49f46af04",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":147.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"c11cd836785a498bb1c43fe81b395666",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":147.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"d8a77ea5b1154ca184f53736b9ee1e68",
+                  "label":"口服",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "size":{
+                      "width":360,
+                      "height":45}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"单击",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setFunction",
+                              "description":"设置 值于 account = &quot;张大三&quot;",
+                              "expr":{
+                                "exprType":"block",
+                                "subExprs":[{
+                                    "exprType":"fcall",
+                                    "functionName":"SetGlobalVariableValue",
+                                    "arguments":[{
+                                        "exprType":"globalVariableLiteral",
+                                        "variableName":"account"},
+{
+                                        "exprType":"stringLiteral",
+                                        "value":"张大三",
+                                        "stos":[]}]}]}},
+{
+                              "action":"linkWindow",
+                              "description":"在 当前窗口 打开 口服给药",
+                              "target":{
+                                "targetType":"page",
+                                "url":"口服给药.html",
+                                "includeVariables":true},
+                              "linkType":"current"}]}]}},
+                  "tabbable":true},
+{
+                  "id":"3c54b5ef701b414297d02454ab52d93a",
+                  "label":"输液",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":0,
+                      "y":45},
+                    "size":{
+                      "width":360,
+                      "height":45}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"单击",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setFunction",
+                              "description":"设置 值于 account = &quot;张大三&quot;",
+                              "expr":{
+                                "exprType":"block",
+                                "subExprs":[{
+                                    "exprType":"fcall",
+                                    "functionName":"SetGlobalVariableValue",
+                                    "arguments":[{
+                                        "exprType":"globalVariableLiteral",
+                                        "variableName":"account"},
+{
+                                        "exprType":"stringLiteral",
+                                        "value":"张大三",
+                                        "stos":[]}]}]}},
+{
+                              "action":"linkWindow",
+                              "description":"在 当前窗口 打开 输液",
+                              "target":{
+                                "targetType":"page",
+                                "url":"输液.html",
+                                "includeVariables":true},
+                              "linkType":"current"}]}]}},
+                  "tabbable":true},
+{
+                  "id":"2c7003c869044405991faaa13dfd687b",
+                  "label":"针剂",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageMapRegion",
+                  "styleType":"imageMapRegion",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":0,
+                      "y":90},
+                    "size":{
+                      "width":360,
+                      "height":45}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"单击",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setFunction",
+                              "description":"设置 值于 account = &quot;张大三&quot;",
+                              "expr":{
+                                "exprType":"block",
+                                "subExprs":[{
+                                    "exprType":"fcall",
+                                    "functionName":"SetGlobalVariableValue",
+                                    "arguments":[{
+                                        "exprType":"globalVariableLiteral",
+                                        "variableName":"account"},
+{
+                                        "exprType":"stringLiteral",
+                                        "value":"张大三",
+                                        "stos":[]}]}]}},
+{
+                              "action":"linkWindow",
+                              "description":"在 当前窗口 打开 针剂",
+                              "target":{
+                                "targetType":"page",
+                                "url":"针剂.html",
+                                "includeVariables":true},
+                              "linkType":"current"}]}]}},
+                  "tabbable":true}]},
+{
+              "id":"f8e7eb013b924ad18da778228cfd7a6d",
+              "label":"立即",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"59c2d4fa2e1140d0b0361258c010b8e3",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"0763e73d82de4828a729c9b3fa9144e8",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/口服条目_u36.png"}},
+{
+                  "id":"c3b47db6c883450cbfc2d4f2a760032e",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":45},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"42f1decad9824fdb9f9b21746db1b718",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":45},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"a3e0b806e3234117b0bc5b7e95019094",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":90},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"405969917fcb4497af0f2a388a7e88d7",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":90},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"19c5059eedac4692a4753c41c6a12e5d",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":135},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"ad5720769d2b4d27acce6eb4063942ec",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":135},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"3c3ed181b1e24a22854be6771a236cee",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":13},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"8db3247a65f044d98fa37358e023f90e",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":13},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"d89fb4bb69da48a98529eb145d368462",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":13},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"2a29f6b0ba924ccdb817de080977dffe",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":13},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"af67165a43b54bc880446feeb2646df4",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":12.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"ba31b2b15eec406a8aa578972b19e801",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":12.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"43a2a1f14c984b0480b45105cf9e5a60",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":58},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"81456b208b1c423a9636f3609fe7b924",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":58},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"7ef3d84b735f4e9f892693b0afdd7f5b",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":58},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"944c82fe29514fc18e7356657e0a6c0b",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":58},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"e721e597f4b14ba08521f4596ddf9482",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":57.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"3484a154d83d4797a69677ba54401c96",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":57.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"fc212052047d4ff6ab49381f485e8ca0",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":102},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"c4e4df0cc44c40158c73f7cafe1ae431",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":102},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"a2ab637785e848108876057d578bc8a9",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":102},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"e1229b2648424f4c9e944020f622ea34",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":102},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"bd5d3f46aaf8443fa48b8a97bc8bcda1",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":102.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"8612500aeffd4aa68588b563bdfc5a0c",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":102.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"4fc6ed5a4ea446d8a933eb3cc2e59c81",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":148},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"ecc95fccd5bf46bea3622e9a86dda13e",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":148},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"089e88ec26c54d699f33850aa6dae542",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":148},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"78bfecbefcc74db797e8d4777d087cbd",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":148},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"b7108ebf0b8f4614950328cb901e367e",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":147.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"fc615cc4da564dc991628030715decb9",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":147.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}}]},
+{
+              "id":"a52752fb869c4d468bd45b509f4ac874",
+              "label":"8时",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"2ec49a2de43a408bac4f46f4bfaa195f",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"e828df57238a4a4aa458c9f0262c2dfc",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/口服条目_u36.png"}},
+{
+                  "id":"2ce22984d0944c2985197bd7d3393df6",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":45},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"56fc5a55607a45ac9a8f90ed8225ab83",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":45},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"4f44aa8a0e104c12b3af5673754eeb36",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":90},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"b702cfd2d463466c803f10210ad62acc",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":90},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"21308bde6cea468ea4fb2a249d4283a3",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":135},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"01534e13999d4414ac59ea485f156a45",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":135},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"77331796b38d435cadafd6b298d7853a",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":13},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"e3f12879cd9546efbcd1da1149effea0",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":13},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"346bcc491de7405aa1de49f796fdcbb3",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":13},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"ce9cba8fa8c34b9f9f4555c31fc157d2",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":13},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"e7757ce7fb364157a4754e6258e77d43",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":12.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"755cd0fd384348ef9375eccfad749f50",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":12.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"0e1ade26a97048a9bedf26d029d5f219",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":58},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"8ef0de7a647340328f6f464ca1d8349f",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":58},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"153221f974334171bb23ef7003abded9",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":58},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"e6bef9bc59ec4840abab88de35a6f5fb",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":58},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"ecd4c615d0f74fe4be21a22d4fbd7255",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":57.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"c1bb509090884e1ab48598942d78d005",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":57.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"0b0f8bb5664a4eaa9ad7d09c61d4bb47",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":102},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"2cfb09b9776b4ec0bcd13004bff9080f",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":102},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"23e5ba39f5e0405aa3aa84eba66f5df4",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":102},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"94d42af6c5b04d56bbbeedb5eef4492d",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":102},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"bb46d19468f64484aed6b7c266c5dc01",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":102.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"e72bbdf26fc04a64826e5a44ed514c44",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":102.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"d943e34ac2f14cb6828fc107ac2d97ad",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":148},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"f1fee90d41254041b02b6fad0fc77e17",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":148},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"a22a961f120d439bb8e28b68f81ef79e",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":148},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"67a62ab6848a46b08577ab300f447c67",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":148},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"19e39b46eebc4303b3de8d94219e77b1",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":147.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"38fd952de2714f5d8be9cd2a35af52ca",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":147.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}}]},
+{
+              "id":"19f03170b93e4ed7962dca4167bf1fc0",
+              "label":"12时",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"ff211430f2fb48b58f3ca547581b35e7",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"bc9f1080181545a8a5aad860e49b5d63",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/口服条目_u36.png"}},
+{
+                  "id":"74d21cef21a3465b8d4fdb7beedeca34",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":45},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"0093e9bd410848b6b94aa59a243e38f5",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":45},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"df5e079f05cd40c491f80da95e8cb4f3",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":90},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"aa939116aed146cea41a4fbdca71f093",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":90},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"98a52052dc7a4047906eb9a1483dbc70",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":135},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"166ea948ae4f43cea67a20fce73c4617",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":135},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"3a2804bb309243b080411c6d2c42d898",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":13},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"a144fcd270a2456bbf637fff51299faa",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":13},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"9e8ceaab61d149b2812ac066d47f90e9",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":13},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"d09f6b74046c4949a1907f798f4a5225",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":13},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"f71cdaaa819a4588b10c0a26099efb83",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":12.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"860a250e45124d61a82b46d6e60287c9",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":12.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"6fe90d27b2754938a76b6661803e4917",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":58},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"165e2fc255f64eb7a784127395e71d73",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":58},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"c9414f6dda344b528f244d120e612bf5",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":58},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"9536c9db58ed4f0b81a07d42d5a844bd",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":58},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"13d41638f6ce4833ae3f48b6dd0d098f",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":57.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"f3eb6ca52d9a4002b913d1fb127e1b41",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":57.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"72ba5aba09d042afa0ffd5e417547354",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":102},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"0323e83205ff487fb753ea87457e0615",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":102},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"3592ff04e2ce440f8e25ac76f9c3ad39",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":102},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"d485675aec954c938a6e57afa08ac0fe",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":102},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"aa391ace637840388eb5e88271c66a4f",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":102.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"d762c677b92f4a6b90e74120aab67562",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":102.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"09ab0060bfe94999a2182ea061c299cd",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":148},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"b8bdb944d081432d8db1c86c3a815880",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":148},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"2f7b2749442940b7800dbd2a56f9fd17",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":148},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"9fe499fa23fd48f8b0ad99967e7dc6b0",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":148},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"0d15e6e07d2c4b1181d8e786558959d8",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":147.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"3c78391c597d4ac189c1084214f225b5",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":147.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}}]},
+{
+              "id":"fc4589df8c3646058db77015fa76fe3c",
+              "label":"16时",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"2bd634089d6e4d1f9a387413da6d5899",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"83a624f307c1457b90c43de58ba953fe",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/口服条目_u36.png"}},
+{
+                  "id":"830200e6f0a543c18b30b86aa0ffc425",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":45},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"5b5137eca78f460ea6af59f627bb9137",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":45},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"a08f82701d7c4b20bf9f7e8dead9f760",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":90},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"d34161be3d794582a0ab9d66e601b0d6",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":90},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"53b490b1dab64162808444e0fecc06a2",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":0,
+                      "y":135},
+                    "size":{
+                      "width":360,
+                      "height":45},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xF9CCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"71f9a5980ea747ce93f386952f25cf08",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":0,
+                          "y":135},
+                        "size":{
+                          "width":360,
+                          "height":45},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xF9CCCCCC}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/输液条目_u38.png"}},
+{
+                  "id":"dc3512b091264ffa8902e85f328ee5f1",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":13},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"1d361c6b5f2d45258de8df56d1e71a39",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":13},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"16f5f64dcbf54bb9b7651f764d4ac9d3",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":13},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"8674ad27cac84117942bdedfb2cce14b",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":13},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"1636f49a36f9491abe532a991fe72a53",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":12.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"b27a7b95de134c5c8d547ce6c3f25558",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":12.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"d76d19516b494619920cbfd7c8cdcff9",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":58},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"5a69b04caebb4b6ba2b77dbebc6d512c",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":58},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"ebd5bef9adbc49428687024e0a5e8d5b",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":58},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"3dbea836074b44beb045594cf2357585",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":58},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"82229341f7be4568b54306e59284da04",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":57.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"5983173ead584dfc846d8a8a185739b5",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":57.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"3342db9fd3cb461d9fb5e224e142bee1",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":102},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"1e2199555fba409d9761c2003471a9d6",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":102},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"3e3a4b39bb8d4383b905a35dba231524",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":102},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"0b5cf7ec60a74bbfa9effc20956a2b88",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":102},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"0fc3a26526a84a7ba7f1b4487f079a8b",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":102.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"0ff5828427f94d088350bb163d7758a6",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":102.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}},
+{
+                  "id":"a5a368029b0643609587b857b79f942e",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":30,
+                      "y":148},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"82b7245eb892409291abb009c0f64b15",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":30,
+                          "y":148},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"6612df32284c427184cd6e218d8f22ad",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":215,
+                      "y":148},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"4b44c381304a4e9780fd6ec5b0248287",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":215,
+                          "y":148},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"0c9d04e07aff4a27a8a9e458eb4ea743",
+                  "label":"",
+                  "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":330,
+                      "y":147.5},
+                    "size":{
+                      "width":16,
+                      "height":20}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"f0199723172441618044ed9e03584bd9",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"7040ece1d4d545ef82e1b8616ed454fd",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":330,
+                          "y":147.5},
+                        "size":{
+                          "width":16,
+                          "height":20}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u48.png"}}]}]},
+{
+          "id":"027c1f08233849b6bffbd04bd84f6bd7",
+          "label":"时间tab面板",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":44,
+              "y":285},
+            "size":{
+              "width":360,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"65968d72284c43a19b7c79d30d2a01dd",
+              "label":"State1",
+              "type":"Axure:PanelDiagram",
+              "objects":[]}]},
+{
+          "id":"a5bc7e2f086d4cfcaf9426de9696d42f",
+          "label":"全部面板",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":44,
+              "y":285},
+            "size":{
+              "width":72,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"全部面板单击时",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"设置 全部面板 to 选中 显示隐藏,<br>立即面板 to 未选中 显示隐藏,<br>8时面板 to 未选中 显示隐藏,<br>12时面板 to 未选中 显示隐藏,<br>16时面板 to 未选中 显示隐藏",
+                      "panelsToStates":[{
+                          "panelPath":["a5bc7e2f086d4cfcaf9426de9696d42f"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["914a381c40c746a995eb2477ef565c3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["ac2277cd93de4433bdf1752a7e8be143"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["879423af8af747f68b458a806d43a8b9"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["1c15cb9aafe7428dafd4fe218e0f22b5"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}}]},
+{
+                      "action":"setPanelState",
+                      "description":"设置 医嘱面板 to 全部 显示隐藏",
+                      "panelsToStates":[{
+                          "panelPath":["7040ece1d4d545ef82e1b8616ed454fd"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}}]}]}]},
+            "onPanelStateChange":{
+              "description":"OnPanelStateChange",
+              "cases":[{
+                  "description":"全部面板状态改变时<br> (If state of 全部面板 等于 选中)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetPanelState",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["a5bc7e2f086d4cfcaf9426de9696d42f"]}]},
+                    "rightExpr":{
+                      "exprType":"panelDiagramLiteral",
+                      "panelPath":["a5bc7e2f086d4cfcaf9426de9696d42f"],
+                      "panelIndex":0}},
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"设置 全部面板 to 选中 显示隐藏,<br>立即面板 to 未选中 显示隐藏,<br>8时面板 to 未选中 显示隐藏,<br>12时面板 to 未选中 显示隐藏,<br>16时面板 to 未选中 显示隐藏",
+                      "panelsToStates":[{
+                          "panelPath":["a5bc7e2f086d4cfcaf9426de9696d42f"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["914a381c40c746a995eb2477ef565c3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["ac2277cd93de4433bdf1752a7e8be143"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["879423af8af747f68b458a806d43a8b9"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["1c15cb9aafe7428dafd4fe218e0f22b5"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}}]},
+{
+                      "action":"setPanelState",
+                      "description":"设置 医嘱面板 to 全部 显示隐藏",
+                      "panelsToStates":[{
+                          "panelPath":["7040ece1d4d545ef82e1b8616ed454fd"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}}]}]}]}},
+          "tabbable":true,
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"40ddf49194fb49eaa045d0be0abab8e1",
+              "label":"选中",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"0c00d816149a4f2a867583cf7c756995",
+                  "label":"",
+                  "parentDynamicPanel":"a5bc7e2f086d4cfcaf9426de9696d42f",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFF009DD9},
+                    "size":{
+                      "width":72,
+                      "height":40},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0x5797979}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"684bc4cd7b554d2899d14b10d9f0dd66",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"a5bc7e2f086d4cfcaf9426de9696d42f",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFF009DD9},
+                        "size":{
+                          "width":72,
+                          "height":40},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0x5797979}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u201.png"}},
+{
+                  "id":"e0ec305722c7466b840241990c27aa47",
+                  "label":"",
+                  "parentDynamicPanel":"a5bc7e2f086d4cfcaf9426de9696d42f",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "horizontalAlignment":"center",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFFFF,
+                      "opacity":1},
+                    "location":{
+                      "x":20,
+                      "y":10},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"e56a8327483f45238de763335c7d1030",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"a5bc7e2f086d4cfcaf9426de9696d42f",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "horizontalAlignment":"center",
+                        "foreGroundFill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFFFF,
+                          "opacity":1},
+                        "location":{
+                          "x":20,
+                          "y":10},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}}]},
+{
+              "id":"91eb34808f1045e68a3165e16cb8fc67",
+              "label":"未选中",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"e10358e6896748d68eafd3de4201c5b2",
+                  "label":"",
+                  "parentDynamicPanel":"a5bc7e2f086d4cfcaf9426de9696d42f",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC},
+                    "size":{
+                      "width":72,
+                      "height":40},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0x797979}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"b34b78f2c0ab45c1aa3363b062a21928",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"a5bc7e2f086d4cfcaf9426de9696d42f",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFFCCCCCC},
+                        "size":{
+                          "width":72,
+                          "height":40},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0x797979}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u205.png"}},
+{
+                  "id":"b38f196672424484aed11a066dd8ef96",
+                  "label":"",
+                  "parentDynamicPanel":"a5bc7e2f086d4cfcaf9426de9696d42f",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":20,
+                      "y":10},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"6e34dcb00bfc4cb3b1519f903f18016c",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"a5bc7e2f086d4cfcaf9426de9696d42f",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":20,
+                          "y":10},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}}]}]},
+{
+          "id":"914a381c40c746a995eb2477ef565c3e",
+          "label":"立即面板",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":116,
+              "y":285},
+            "size":{
+              "width":72,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"立即面板单击时",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"设置 全部面板 to 未选中 显示隐藏,<br>立即面板 to 选中 显示隐藏,<br>8时面板 to 未选中 显示隐藏,<br>12时面板 to 未选中,<br>16时面板 to 未选中 显示隐藏,<br>医嘱面板 to 立即 显示隐藏",
+                      "panelsToStates":[{
+                          "panelPath":["a5bc7e2f086d4cfcaf9426de9696d42f"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["914a381c40c746a995eb2477ef565c3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["ac2277cd93de4433bdf1752a7e8be143"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["879423af8af747f68b458a806d43a8b9"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":false,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["1c15cb9aafe7428dafd4fe218e0f22b5"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["7040ece1d4d545ef82e1b8616ed454fd"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}}]}]}]},
+            "onPanelStateChange":{
+              "description":"OnPanelStateChange",
+              "cases":[{
+                  "description":"立即面板状态改变时<br> (If state of 立即面板 等于 选中)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetPanelState",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["914a381c40c746a995eb2477ef565c3e"]}]},
+                    "rightExpr":{
+                      "exprType":"panelDiagramLiteral",
+                      "panelPath":["914a381c40c746a995eb2477ef565c3e"],
+                      "panelIndex":1}},
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"设置 医嘱面板 to 立即 显示隐藏,<br>全部面板 to 未选中 显示隐藏,<br>立即面板 to 选中 显示隐藏,<br>8时面板 to 未选中 显示隐藏,<br>12时面板 to 未选中 显示隐藏,<br>16时面板 to 未选中 显示隐藏",
+                      "panelsToStates":[{
+                          "panelPath":["7040ece1d4d545ef82e1b8616ed454fd"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["a5bc7e2f086d4cfcaf9426de9696d42f"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["914a381c40c746a995eb2477ef565c3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["ac2277cd93de4433bdf1752a7e8be143"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["879423af8af747f68b458a806d43a8b9"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["1c15cb9aafe7428dafd4fe218e0f22b5"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}}]}]}]}},
+          "tabbable":true,
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"57e623bb0b874a5eae5d0d3c27db19b2",
+              "label":"未选中",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"6a08869d6cdf4e20afe30fa0f7d74151",
+                  "label":"",
+                  "parentDynamicPanel":"914a381c40c746a995eb2477ef565c3e",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC},
+                    "size":{
+                      "width":72,
+                      "height":40},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0x797979}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"88fe30067cbd4923bc8d6c0085d7a227",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"914a381c40c746a995eb2477ef565c3e",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFFCCCCCC},
+                        "size":{
+                          "width":72,
+                          "height":40},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0x797979}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u205.png"}},
+{
+                  "id":"f0d5ba19dceb407b88f63895808c6f87",
+                  "label":"",
+                  "parentDynamicPanel":"914a381c40c746a995eb2477ef565c3e",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":20,
+                      "y":10},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"8fb3a347f2684866a75aad5d2347e603",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"914a381c40c746a995eb2477ef565c3e",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":20,
+                          "y":10},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}}]},
+{
+              "id":"2d2acd6d827e436e8d248c82274ae70d",
+              "label":"选中",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"a604d3d555434ba0800da38f860bce4d",
+                  "label":"",
+                  "parentDynamicPanel":"914a381c40c746a995eb2477ef565c3e",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFF009DD9},
+                    "size":{
+                      "width":72,
+                      "height":40},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0x797979}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"ae0d34fadb154d13bdf6d39e0cbd9192",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"914a381c40c746a995eb2477ef565c3e",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFF009DD9},
+                        "size":{
+                          "width":72,
+                          "height":40},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0x797979}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u214.png"}},
+{
+                  "id":"824b61d3235e4c2abba6d6526ef093de",
+                  "label":"",
+                  "parentDynamicPanel":"914a381c40c746a995eb2477ef565c3e",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFFFF,
+                      "opacity":1},
+                    "location":{
+                      "x":20,
+                      "y":10},
+                    "size":{
+                      "width":33,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"d15101703377445b9ae9756a54336649",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"914a381c40c746a995eb2477ef565c3e",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "foreGroundFill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFFFF,
+                          "opacity":1},
+                        "location":{
+                          "x":20,
+                          "y":10},
+                        "size":{
+                          "width":33,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}}]}]},
+{
+          "id":"ac2277cd93de4433bdf1752a7e8be143",
+          "label":"8时面板",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":188,
+              "y":285},
+            "size":{
+              "width":72,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"8时面板单击时",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"设置 医嘱面板 to 8时 显示隐藏,<br>全部面板 to 未选中 显示隐藏,<br>立即面板 to 未选中 显示隐藏,<br>8时面板 to 选中 显示隐藏,<br>12时面板 to 未选中 显示隐藏,<br>16时面板 to 未选中 显示隐藏",
+                      "panelsToStates":[{
+                          "panelPath":["7040ece1d4d545ef82e1b8616ed454fd"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":3,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["a5bc7e2f086d4cfcaf9426de9696d42f"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["914a381c40c746a995eb2477ef565c3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["ac2277cd93de4433bdf1752a7e8be143"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["879423af8af747f68b458a806d43a8b9"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["1c15cb9aafe7428dafd4fe218e0f22b5"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}}]}]}]},
+            "onPanelStateChange":{
+              "description":"OnPanelStateChange",
+              "cases":[{
+                  "description":"8时面板状态改变时<br> (If state of 8时面板 等于 选中)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetPanelState",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["ac2277cd93de4433bdf1752a7e8be143"]}]},
+                    "rightExpr":{
+                      "exprType":"panelDiagramLiteral",
+                      "panelPath":["ac2277cd93de4433bdf1752a7e8be143"],
+                      "panelIndex":1}},
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"设置 医嘱面板 to 8时 显示隐藏,<br>全部面板 to 未选中 显示隐藏,<br>立即面板 to 未选中 显示隐藏,<br>8时面板 to 选中 显示隐藏,<br>12时面板 to 未选中 显示隐藏,<br>16时面板 to 未选中 显示隐藏",
+                      "panelsToStates":[{
+                          "panelPath":["7040ece1d4d545ef82e1b8616ed454fd"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":3,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["a5bc7e2f086d4cfcaf9426de9696d42f"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["914a381c40c746a995eb2477ef565c3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["ac2277cd93de4433bdf1752a7e8be143"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["879423af8af747f68b458a806d43a8b9"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["1c15cb9aafe7428dafd4fe218e0f22b5"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}}]}]}]}},
+          "tabbable":true,
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"7538a3d8695e4919a4c33f219d15b096",
+              "label":"未选中",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"d9a9ea2cb83d4bc9b9adcdf35d9028f3",
+                  "label":"",
+                  "parentDynamicPanel":"ac2277cd93de4433bdf1752a7e8be143",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC},
+                    "size":{
+                      "width":72,
+                      "height":40},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0x797979}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"9cbb10be134f4ceb9870f25f84538ad7",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"ac2277cd93de4433bdf1752a7e8be143",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFFCCCCCC},
+                        "size":{
+                          "width":72,
+                          "height":40},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0x797979}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u205.png"}},
+{
+                  "id":"9d173c991f7c4b4ba706f3da5b9d5d32",
+                  "label":"",
+                  "parentDynamicPanel":"ac2277cd93de4433bdf1752a7e8be143",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":23,
+                      "y":10},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"777b5f4f2c6f406c987ac313e1cfa047",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"ac2277cd93de4433bdf1752a7e8be143",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":23,
+                          "y":10},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}}]},
+{
+              "id":"f911082645374ab3bc5ba4250074eabd",
+              "label":"选中",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"b48e82ee5e7947508ddd52290deabd14",
+                  "label":"",
+                  "parentDynamicPanel":"ac2277cd93de4433bdf1752a7e8be143",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFF009DD9},
+                    "size":{
+                      "width":72,
+                      "height":40},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0x797979}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"6ac7075ec06948d4859fdf36f5d0c531",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"ac2277cd93de4433bdf1752a7e8be143",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFF009DD9},
+                        "size":{
+                          "width":72,
+                          "height":40},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0x797979}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u214.png"}},
+{
+                  "id":"bb19d7ebeb994f56ac4553106fb8f560",
+                  "label":"",
+                  "parentDynamicPanel":"ac2277cd93de4433bdf1752a7e8be143",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFFFF,
+                      "opacity":1},
+                    "location":{
+                      "x":23,
+                      "y":10},
+                    "size":{
+                      "width":26,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"117fff6550064000a1619a0c46a75583",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"ac2277cd93de4433bdf1752a7e8be143",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "foreGroundFill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFFFF,
+                          "opacity":1},
+                        "location":{
+                          "x":23,
+                          "y":10},
+                        "size":{
+                          "width":26,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}}]}]},
+{
+          "id":"879423af8af747f68b458a806d43a8b9",
+          "label":"12时面板",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":260,
+              "y":285},
+            "size":{
+              "width":72,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"12时面板单击时",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"设置 医嘱面板 to 12时 显示隐藏,<br>全部面板 to 未选中 显示隐藏,<br>立即面板 to 未选中 显示隐藏,<br>8时面板 to 未选中 显示隐藏,<br>12时面板 to 选中 显示隐藏,<br>16时面板 to 未选中 显示隐藏",
+                      "panelsToStates":[{
+                          "panelPath":["7040ece1d4d545ef82e1b8616ed454fd"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":4,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["a5bc7e2f086d4cfcaf9426de9696d42f"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["914a381c40c746a995eb2477ef565c3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["ac2277cd93de4433bdf1752a7e8be143"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["879423af8af747f68b458a806d43a8b9"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["1c15cb9aafe7428dafd4fe218e0f22b5"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}}]}]}]},
+            "onPanelStateChange":{
+              "description":"OnPanelStateChange",
+              "cases":[{
+                  "description":"12时面板状态改变时<br> (If state of 12时面板 等于 选中)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetPanelState",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["879423af8af747f68b458a806d43a8b9"]}]},
+                    "rightExpr":{
+                      "exprType":"panelDiagramLiteral",
+                      "panelPath":["879423af8af747f68b458a806d43a8b9"],
+                      "panelIndex":1}},
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"设置 医嘱面板 to 12时 显示隐藏,<br>全部面板 to 未选中 显示隐藏,<br>立即面板 to 未选中 显示隐藏,<br>8时面板 to 未选中 显示隐藏,<br>12时面板 to 选中 显示隐藏,<br>16时面板 to 未选中 显示隐藏",
+                      "panelsToStates":[{
+                          "panelPath":["7040ece1d4d545ef82e1b8616ed454fd"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":4,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["a5bc7e2f086d4cfcaf9426de9696d42f"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["914a381c40c746a995eb2477ef565c3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["ac2277cd93de4433bdf1752a7e8be143"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["879423af8af747f68b458a806d43a8b9"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["1c15cb9aafe7428dafd4fe218e0f22b5"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}}]}]}]}},
+          "tabbable":true,
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"dfb5adc5d0554b4bac3bfd2edd5e73d2",
+              "label":"未选中",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"af6d76a6f77b4cebbcf6a0335313ef5c",
+                  "label":"",
+                  "parentDynamicPanel":"879423af8af747f68b458a806d43a8b9",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC},
+                    "size":{
+                      "width":72,
+                      "height":40},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0x797979}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"b243ba71701c49d9b7f7992dd7bb9c06",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"879423af8af747f68b458a806d43a8b9",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFFCCCCCC},
+                        "size":{
+                          "width":72,
+                          "height":40},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0x797979}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u205.png"}},
+{
+                  "id":"e32dc567371b4b7189c047be2b8e00e0",
+                  "label":"",
+                  "parentDynamicPanel":"879423af8af747f68b458a806d43a8b9",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":18,
+                      "y":10},
+                    "size":{
+                      "width":35,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"dd829b46ff05416998c03906f53f806d",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"879423af8af747f68b458a806d43a8b9",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":18,
+                          "y":10},
+                        "size":{
+                          "width":35,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}}]},
+{
+              "id":"13c7714a038d467db30fdd624cab54c6",
+              "label":"选中",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"32636a75217b4f2388446393e0c1f002",
+                  "label":"",
+                  "parentDynamicPanel":"879423af8af747f68b458a806d43a8b9",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFF009DD9},
+                    "size":{
+                      "width":72,
+                      "height":40},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0x797979}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"50c707597c2c4b1fb5142312933a733d",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"879423af8af747f68b458a806d43a8b9",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFF009DD9},
+                        "size":{
+                          "width":72,
+                          "height":40},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0x797979}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u214.png"}},
+{
+                  "id":"3e9acc8b959d47d7a08ed59410253fbe",
+                  "label":"",
+                  "parentDynamicPanel":"879423af8af747f68b458a806d43a8b9",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFFFF,
+                      "opacity":1},
+                    "location":{
+                      "x":18,
+                      "y":10},
+                    "size":{
+                      "width":35,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"6e1a1a51430a4119991e06827026c313",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"879423af8af747f68b458a806d43a8b9",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "foreGroundFill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFFFF,
+                          "opacity":1},
+                        "location":{
+                          "x":18,
+                          "y":10},
+                        "size":{
+                          "width":35,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}}]}]},
+{
+          "id":"1c15cb9aafe7428dafd4fe218e0f22b5",
+          "label":"16时面板",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":332,
+              "y":285},
+            "size":{
+              "width":72,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"16时面板单击时",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"设置 医嘱面板 to 16时 显示隐藏,<br>全部面板 to 未选中 显示隐藏,<br>立即面板 to 未选中 显示隐藏,<br>8时面板 to 未选中 显示隐藏,<br>12时面板 to 未选中 显示隐藏,<br>16时面板 to 选中 显示隐藏",
+                      "panelsToStates":[{
+                          "panelPath":["7040ece1d4d545ef82e1b8616ed454fd"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":5,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["a5bc7e2f086d4cfcaf9426de9696d42f"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["914a381c40c746a995eb2477ef565c3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["ac2277cd93de4433bdf1752a7e8be143"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["879423af8af747f68b458a806d43a8b9"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["1c15cb9aafe7428dafd4fe218e0f22b5"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}}]}]}]},
+            "onPanelStateChange":{
+              "description":"OnPanelStateChange",
+              "cases":[{
+                  "description":"16时面板状态改变时<br> (If state of 16时面板 等于 选中)",
+                  "isNewIfGroup":false,
+                  "condition":{
+                    "exprType":"binaryOp",
+                    "op":"==",
+                    "leftExpr":{
+                      "exprType":"fcall",
+                      "functionName":"GetPanelState",
+                      "arguments":[{
+                          "exprType":"pathLiteral",
+                          "isThis":false,
+                          "isFocused":false,
+                          "isTarget":false,
+                          "value":["1c15cb9aafe7428dafd4fe218e0f22b5"]}]},
+                    "rightExpr":{
+                      "exprType":"panelDiagramLiteral",
+                      "panelPath":["1c15cb9aafe7428dafd4fe218e0f22b5"],
+                      "panelIndex":1}},
+                  "actions":[{
+                      "action":"setPanelState",
+                      "description":"设置 医嘱面板 to 16时 显示隐藏,<br>全部面板 to 未选中 显示隐藏,<br>立即面板 to 未选中 显示隐藏,<br>8时面板 to 未选中 显示隐藏,<br>12时面板 to 未选中 显示隐藏,<br>16时面板 to 选中 显示隐藏",
+                      "panelsToStates":[{
+                          "panelPath":["7040ece1d4d545ef82e1b8616ed454fd"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":5,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["a5bc7e2f086d4cfcaf9426de9696d42f"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["914a381c40c746a995eb2477ef565c3e"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["ac2277cd93de4433bdf1752a7e8be143"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["879423af8af747f68b458a806d43a8b9"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":1,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}},
+{
+                          "panelPath":["1c15cb9aafe7428dafd4fe218e0f22b5"],
+                          "stateInfo":{
+                            "setStateType":"diagram",
+                            "stateNumber":2,
+                            "stateValue":{
+                              "exprType":"stringLiteral",
+                              "value":"1",
+                              "stos":[]},
+                            "loop":false,
+                            "showWhenSet":true,
+                            "options":{
+                              "compress":false}}}]}]}]}},
+          "tabbable":true,
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"26d4e6d288f847a591273b121cadceff",
+              "label":"未选中",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"3f709c6d2bb04ffebd4b1ac7cc1bfa5c",
+                  "label":"",
+                  "parentDynamicPanel":"1c15cb9aafe7428dafd4fe218e0f22b5",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC},
+                    "size":{
+                      "width":72,
+                      "height":40},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0x797979}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"e66f3976744647b3a71e939783a6722e",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"1c15cb9aafe7428dafd4fe218e0f22b5",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFFCCCCCC},
+                        "size":{
+                          "width":72,
+                          "height":40},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0x797979}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u205.png"}},
+{
+                  "id":"0a5595db36724a70909d7f29457a512f",
+                  "label":"",
+                  "parentDynamicPanel":"1c15cb9aafe7428dafd4fe218e0f22b5",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "location":{
+                      "x":18,
+                      "y":10},
+                    "size":{
+                      "width":35,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"82ff09d961b24b71b3b9041ad351d5eb",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"1c15cb9aafe7428dafd4fe218e0f22b5",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "location":{
+                          "x":18,
+                          "y":10},
+                        "size":{
+                          "width":35,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}}]},
+{
+              "id":"f80ae995be96401185b9875cdbd0292e",
+              "label":"选中",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"fa8bbc55b7524307a62605252f89ca0d",
+                  "label":"",
+                  "parentDynamicPanel":"1c15cb9aafe7428dafd4fe218e0f22b5",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFF009DD9},
+                    "size":{
+                      "width":72,
+                      "height":40},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0x797979}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"2a0871500a704223b327819949318310",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"1c15cb9aafe7428dafd4fe218e0f22b5",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFF009DD9},
+                        "size":{
+                          "width":72,
+                          "height":40},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0x797979}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u214.png"}},
+{
+                  "id":"4477ecb075134473aa0c40fc4e5c65ff",
+                  "label":"",
+                  "parentDynamicPanel":"1c15cb9aafe7428dafd4fe218e0f22b5",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"16px",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFFFF,
+                      "opacity":1},
+                    "location":{
+                      "x":18,
+                      "y":10},
+                    "size":{
+                      "width":35,
+                      "height":19}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"133102608c0840e984ad4b8daab59eaf",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"1c15cb9aafe7428dafd4fe218e0f22b5",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"16px",
+                        "foreGroundFill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFFFF,
+                          "opacity":1},
+                        "location":{
+                          "x":18,
+                          "y":10},
+                        "size":{
+                          "width":35,
+                          "height":19}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}}]}]},
+{
+          "id":"f69745176a4744cfbef1e62d46f43536",
+          "label":"医嘱类型面板",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":253,
+              "y":130},
+            "size":{
+              "width":151,
+              "height":50}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"医嘱面板单击时",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"fadeWidget",
+                      "description":"显示 医嘱类型条目面板 向下滑动 500 ms",
+                      "objectsToFades":[{
+                          "objectPath":["c498876f56964fa3b2109d74ac9d54a6"],
+                          "fadeInfo":{
+                            "fadeType":"show",
+                            "options":{
+                              "easing":"slideDown",
+                              "duration":500,
+                              "showType":"none"}}}]}]}]}},
+          "tabbable":true,
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"82e6cc82a06649ca8d1c378020dfa770",
+              "label":"有效医嘱",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"8ac0427021da4624a793c9f31a7e0550",
+                  "label":"",
+                  "parentDynamicPanel":"f69745176a4744cfbef1e62d46f43536",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFF009DD9},
+                    "size":{
+                      "width":150,
+                      "height":50},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0x5FFFFFF}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"14c4dde87fa74ee09a3fc22350bdc815",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"f69745176a4744cfbef1e62d46f43536",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFF009DD9},
+                        "size":{
+                          "width":150,
+                          "height":50},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0x5FFFFFF}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u246.png"}},
+{
+                  "id":"c5083874db3c41fa97fba885f4eac95a",
+                  "label":"",
+                  "parentDynamicPanel":"f69745176a4744cfbef1e62d46f43536",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"18px",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFFFF,
+                      "opacity":1},
+                    "location":{
+                      "x":38,
+                      "y":14},
+                    "size":{
+                      "width":73,
+                      "height":22}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"9768975d0d0e4cdeb93320c7ffe8139e",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"f69745176a4744cfbef1e62d46f43536",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"18px",
+                        "foreGroundFill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFFFF,
+                          "opacity":1},
+                        "location":{
+                          "x":38,
+                          "y":14},
+                        "size":{
+                          "width":73,
+                          "height":22}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"1e74bd2217d44cb8a67ffaca79025721",
+                  "label":"",
+                  "parentDynamicPanel":"f69745176a4744cfbef1e62d46f43536",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":121,
+                      "y":17},
+                    "size":{
+                      "width":20,
+                      "height":16}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"4cd2d3c89d0c4977b56d446e27f5f7fd",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"f69745176a4744cfbef1e62d46f43536",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":121,
+                          "y":17},
+                        "size":{
+                          "width":20,
+                          "height":16}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u250.png"}}]},
+{
+              "id":"9b2e18e39d424520be92d8bb6bd819a8",
+              "label":"无效医嘱",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"b7904f204b2a4df2b05f7a8f76b99303",
+                  "label":"",
+                  "parentDynamicPanel":"f69745176a4744cfbef1e62d46f43536",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFF009DD9},
+                    "size":{
+                      "width":150,
+                      "height":50},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFF}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"f4f63681af72489788159ad0098d00bf",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"f69745176a4744cfbef1e62d46f43536",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFF009DD9},
+                        "size":{
+                          "width":150,
+                          "height":50},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFF}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u252.png"}},
+{
+                  "id":"8d2c791384334d179a86b381960d7548",
+                  "label":"",
+                  "parentDynamicPanel":"f69745176a4744cfbef1e62d46f43536",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"18px",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFFFF,
+                      "opacity":1},
+                    "location":{
+                      "x":38,
+                      "y":14},
+                    "size":{
+                      "width":73,
+                      "height":22}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"642a7196c2774fb4a8c5e708f6f4f01f",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"f69745176a4744cfbef1e62d46f43536",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"18px",
+                        "foreGroundFill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFFFF,
+                          "opacity":1},
+                        "location":{
+                          "x":38,
+                          "y":14},
+                        "size":{
+                          "width":73,
+                          "height":22}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"38ebcda757754206afdced1846a82b37",
+                  "label":"",
+                  "parentDynamicPanel":"f69745176a4744cfbef1e62d46f43536",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":121,
+                      "y":17},
+                    "size":{
+                      "width":20,
+                      "height":16}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"215f83bd99a44bed831f0d250b60a251",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"f69745176a4744cfbef1e62d46f43536",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":121,
+                          "y":17},
+                        "size":{
+                          "width":20,
+                          "height":16}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/病人详细页/u250.png"}}]}]},
+{
+          "id":"c498876f56964fa3b2109d74ac9d54a6",
+          "label":"医嘱类型条目面板",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":false,
+          "style":{
+            "location":{
+              "x":253,
+              "y":180},
+            "size":{
+              "width":151,
+              "height":100},
+            "visible":false},
+          "adaptiveStyles":{
+},
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"3591b98681ee48eaa4553a7f932fa56b",
+              "label":"State1",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"dfaafc9ddbc64b39807c2e24e11b31e8",
+                  "label":"有效医嘱条目",
+                  "parentDynamicPanel":"c498876f56964fa3b2109d74ac9d54a6",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFF009DD9},
+                    "size":{
+                      "width":150,
+                      "height":50}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"3e9637fb52414bf692f96e71345b9a5e",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"c498876f56964fa3b2109d74ac9d54a6",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFF009DD9},
+                        "size":{
+                          "width":150,
+                          "height":50}},
+                      "adaptiveStyles":{
+}}],
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"有效医嘱条目单击时",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"设置 医嘱类型面板 to 有效医嘱 显示隐藏",
+                              "panelsToStates":[{
+                                  "panelPath":["f69745176a4744cfbef1e62d46f43536"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":1,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":true,
+                                    "options":{
+                                      "compress":false}}}]},
+{
+                              "action":"fadeWidget",
+                              "description":"隐藏 医嘱类型条目面板 向上滑动 500 ms",
+                              "objectsToFades":[{
+                                  "objectPath":["c498876f56964fa3b2109d74ac9d54a6"],
+                                  "fadeInfo":{
+                                    "fadeType":"hide",
+                                    "options":{
+                                      "easing":"slideUp",
+                                      "duration":500,
+                                      "showType":"none"}}}]}]}]}},
+                  "tabbable":true,
+                  "images":{
+                    "normal~":"images/病人详细页/有效医嘱条目_u259.png"}},
+{
+                  "id":"e5e3510b395b47be8202fef0638dfdb6",
+                  "label":"",
+                  "parentDynamicPanel":"c498876f56964fa3b2109d74ac9d54a6",
+                  "type":"horizontalLine",
+                  "styleType":"horizontalLine",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":0,
+                      "y":44},
+                    "size":{
+                      "width":150,
+                      "height":10},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFFFF}},
+                  "adaptiveStyles":{
+},
+                  "images":{
+                    "start~":"resources/images/transparent.gif",
+                    "end~":"resources/images/transparent.gif",
+                    "line~":"images/病人详细页/u261_line.png"}},
+{
+                  "id":"a0cedca9c2964236a7142791b90deaa7",
+                  "label":"无效医嘱条目",
+                  "parentDynamicPanel":"c498876f56964fa3b2109d74ac9d54a6",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFF009DD9},
+                    "location":{
+                      "x":0,
+                      "y":50},
+                    "size":{
+                      "width":150,
+                      "height":50}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"0744428e92c847b6b3e0b1d8fd184618",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"c498876f56964fa3b2109d74ac9d54a6",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFF009DD9},
+                        "location":{
+                          "x":0,
+                          "y":50},
+                        "size":{
+                          "width":150,
+                          "height":50}},
+                      "adaptiveStyles":{
+}}],
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"无效医嘱条目单击时",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"设置 医嘱类型面板 to 无效医嘱 显示隐藏",
+                              "panelsToStates":[{
+                                  "panelPath":["f69745176a4744cfbef1e62d46f43536"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":2,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":true,
+                                    "options":{
+                                      "compress":false}}}]},
+{
+                              "action":"fadeWidget",
+                              "description":"隐藏 医嘱类型条目面板 向上滑动 500 ms",
+                              "objectsToFades":[{
+                                  "objectPath":["c498876f56964fa3b2109d74ac9d54a6"],
+                                  "fadeInfo":{
+                                    "fadeType":"hide",
+                                    "options":{
+                                      "easing":"slideUp",
+                                      "duration":500,
+                                      "showType":"none"}}}]}]}]}},
+                  "tabbable":true,
+                  "images":{
+                    "normal~":"images/病人详细页/有效医嘱条目_u259.png"}},
+{
+                  "id":"e30d759b618e41b89775b645d4763326",
+                  "label":"有效医嘱条目文字",
+                  "parentDynamicPanel":"c498876f56964fa3b2109d74ac9d54a6",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"18px",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFFFF,
+                      "opacity":1},
+                    "location":{
+                      "x":38,
+                      "y":14},
+                    "size":{
+                      "width":73,
+                      "height":22}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"e301d4c5285b41f288d4c905e3f74610",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"c498876f56964fa3b2109d74ac9d54a6",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"18px",
+                        "foreGroundFill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFFFF,
+                          "opacity":1},
+                        "location":{
+                          "x":38,
+                          "y":14},
+                        "size":{
+                          "width":73,
+                          "height":22}},
+                      "adaptiveStyles":{
+}}],
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"有效医嘱条目文字点击",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"设置 医嘱类型面板 to 有效医嘱 显示隐藏",
+                              "panelsToStates":[{
+                                  "panelPath":["f69745176a4744cfbef1e62d46f43536"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":1,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":true,
+                                    "options":{
+                                      "compress":false}}}]},
+{
+                              "action":"fadeWidget",
+                              "description":"隐藏 医嘱类型条目面板 向上滑动 500 ms",
+                              "objectsToFades":[{
+                                  "objectPath":["c498876f56964fa3b2109d74ac9d54a6"],
+                                  "fadeInfo":{
+                                    "fadeType":"hide",
+                                    "options":{
+                                      "easing":"slideUp",
+                                      "duration":500,
+                                      "showType":"none"}}}]}]}]}},
+                  "tabbable":true,
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"044c0c610e98479c9584c0ebb894a780",
+                  "label":"无效医嘱条目文字",
+                  "parentDynamicPanel":"c498876f56964fa3b2109d74ac9d54a6",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"18px",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFFFF,
+                      "opacity":1},
+                    "location":{
+                      "x":38,
+                      "y":64},
+                    "size":{
+                      "width":73,
+                      "height":22}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"496e3d6e06a040418ce8d033fb92e82b",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"c498876f56964fa3b2109d74ac9d54a6",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"18px",
+                        "foreGroundFill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFFFF,
+                          "opacity":1},
+                        "location":{
+                          "x":38,
+                          "y":64},
+                        "size":{
+                          "width":73,
+                          "height":22}},
+                      "adaptiveStyles":{
+}}],
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"无效医嘱条目文字点击",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"设置 医嘱类型面板 to 无效医嘱 显示隐藏",
+                              "panelsToStates":[{
+                                  "panelPath":["f69745176a4744cfbef1e62d46f43536"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":2,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":true,
+                                    "options":{
+                                      "compress":false}}}]},
+{
+                              "action":"fadeWidget",
+                              "description":"隐藏 医嘱类型条目面板 向上滑动 500 ms",
+                              "objectsToFades":[{
+                                  "objectPath":["c498876f56964fa3b2109d74ac9d54a6"],
+                                  "fadeInfo":{
+                                    "fadeType":"hide",
+                                    "options":{
+                                      "easing":"slideUp",
+                                      "duration":500,
+                                      "showType":"none"}}}]}]}]}},
+                  "tabbable":true,
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}}]}]}]}},
+  "masters":{
+    "2d7d071180014c38b40748006bf62620":{
+      "packageId":"2d7d071180014c38b40748006bf62620",
+      "type":"Axure:Master",
+      "name":"phone",
+      "notes":{
+},
+      "style":{
+        "baseStyle":"627587b6038d43cca051c114ac41ad32",
+        "pageAlignment":"near",
+        "fill":{
+          "fillType":"solid",
+          "color":0xFFFFFFFF},
+        "image":null,
+        "imageHorizontalAlignment":"near",
+        "imageVerticalAlignment":"near",
+        "imageRepeat":"auto",
+        "favicon":null,
+        "sketchFactor":"0",
+        "colorStyle":"appliedColor",
+        "fontName":"应用字体",
+        "borderWidth":"0"},
+      "adaptiveStyles":{
+},
+      "interactionMap":{
+},
+      "diagram":{
+        "objects":[{
+            "id":"d99712befac24279b86a34aae3f33907",
+            "label":"",
+            "type":"imageBox",
+            "styleType":"imageBox",
+            "visible":true,
+            "style":{
+              "fontName":"'Applied Font Regular', 'Applied Font'",
+              "location":{
+                "x":10,
+                "y":0},
+              "size":{
+                "width":429,
+                "height":839},
+              "borderWidth":"-1",
+              "borderFill":{
+                "fillType":"solid",
+                "color":0xFF000000}},
+            "adaptiveStyles":{
+},
+            "objects":[{
+                "id":"dabd537881e345b2b281223650e11a9a",
+                "label":"",
+                "isContained":true,
+                "type":"richTextPanel",
+                "styleType":"paragraph",
+                "visible":true,
+                "style":{
+                  "fontName":"'Applied Font Regular', 'Applied Font'",
+                  "location":{
+                    "x":10,
+                    "y":0},
+                  "size":{
+                    "width":429,
+                    "height":839},
+                  "borderWidth":"-1",
+                  "borderFill":{
+                    "fillType":"solid",
+                    "color":0xFF000000}},
+                "adaptiveStyles":{
+}}],
+            "images":{
+              "normal~":"images/login/u1.png"}},
+{
+            "id":"f5852b1d91914e1a8d59b0e4edf121c0",
+            "label":"",
+            "type":"imageBox",
+            "styleType":"imageBox",
+            "visible":true,
+            "style":{
+              "fontName":"'Applied Font Regular', 'Applied Font'",
+              "location":{
+                "x":44,
+                "y":105},
+              "size":{
+                "width":360,
+                "height":25},
+              "borderWidth":"-1",
+              "borderFill":{
+                "fillType":"solid",
+                "color":0xFF000000}},
+            "adaptiveStyles":{
+},
+            "objects":[{
+                "id":"030da254b08b4dd5aab2d7d95f4f332f",
+                "label":"",
+                "isContained":true,
+                "type":"richTextPanel",
+                "styleType":"paragraph",
+                "visible":true,
+                "style":{
+                  "fontName":"'Applied Font Regular', 'Applied Font'",
+                  "location":{
+                    "x":44,
+                    "y":105},
+                  "size":{
+                    "width":360,
+                    "height":25},
+                  "borderWidth":"-1",
+                  "borderFill":{
+                    "fillType":"solid",
+                    "color":0xFF000000}},
+                "adaptiveStyles":{
+}}],
+            "images":{
+              "normal~":"images/login/u3.png"}},
+{
+            "id":"9e71f397c87f4f62a605868be6c8312d",
+            "label":"",
+            "type":"imageBox",
+            "styleType":"imageBox",
+            "visible":true,
+            "style":{
+              "fontName":"'Applied Font Regular', 'Applied Font'",
+              "location":{
+                "x":44,
+                "y":699},
+              "size":{
+                "width":360,
+                "height":48},
+              "borderWidth":"-1",
+              "borderFill":{
+                "fillType":"solid",
+                "color":0xFF000000}},
+            "adaptiveStyles":{
+},
+            "objects":[{
+                "id":"24b95faa0fb44d3ab597259c3c24d1f6",
+                "label":"",
+                "isContained":true,
+                "type":"richTextPanel",
+                "styleType":"paragraph",
+                "visible":true,
+                "style":{
+                  "fontName":"'Applied Font Regular', 'Applied Font'",
+                  "location":{
+                    "x":44,
+                    "y":699},
+                  "size":{
+                    "width":360,
+                    "height":48},
+                  "borderWidth":"-1",
+                  "borderFill":{
+                    "fillType":"solid",
+                    "color":0xFF000000}},
+                "adaptiveStyles":{
+}}],
+            "images":{
+              "normal~":"images/login/u5.png"}},
+{
+            "id":"26b91ea1ca154fdca046593f0212a0ca",
+            "label":"",
+            "type":"buttonShape",
+            "styleType":"buttonShape",
+            "visible":true,
+            "style":{
+              "fontName":"'Applied Font Regular', 'Applied Font'",
+              "fill":{
+                "fillType":"linearGradient",
+                "colors":[{
+                    "color":0xFFE8E8E8},
+{
+                    "color":0xFFE8E8E8},
+{
+                    "color":0xFFF7F7F7},
+{
+                    "color":0xFFF7F7F7}]},
+              "location":{
+                "x":44,
+                "y":129},
+              "size":{
+                "width":360,
+                "height":570},
+              "borderFill":{
+                "fillType":"solid",
+                "color":0xFFFFFF}},
+            "adaptiveStyles":{
+},
+            "objects":[{
+                "id":"47bd1d8a565c48b29534a6b0c7960e69",
+                "label":"",
+                "isContained":true,
+                "type":"richTextPanel",
+                "styleType":"paragraph",
+                "visible":true,
+                "style":{
+                  "fontName":"'Applied Font Regular', 'Applied Font'",
+                  "fill":{
+                    "fillType":"linearGradient",
+                    "colors":[{
+                        "color":0xFFE8E8E8},
+{
+                        "color":0xFFE8E8E8},
+{
+                        "color":0xFFF7F7F7},
+{
+                        "color":0xFFF7F7F7}]},
+                  "location":{
+                    "x":44,
+                    "y":129},
+                  "size":{
+                    "width":360,
+                    "height":570},
+                  "borderFill":{
+                    "fillType":"solid",
+                    "color":0xFFFFFF}},
+                "adaptiveStyles":{
+}}],
+            "images":{
+              "normal~":"images/login/u7.png"}}]}},
+    "1ea34248f44d492085137f67760438e1":{
+      "packageId":"1ea34248f44d492085137f67760438e1",
+      "type":"Axure:Master",
+      "name":"title bar",
+      "notes":{
+},
+      "style":{
+        "baseStyle":"627587b6038d43cca051c114ac41ad32",
+        "pageAlignment":"near",
+        "fill":{
+          "fillType":"solid",
+          "color":0xFFFFFFFF},
+        "image":null,
+        "imageHorizontalAlignment":"near",
+        "imageVerticalAlignment":"near",
+        "imageRepeat":"auto",
+        "favicon":null,
+        "sketchFactor":"0",
+        "colorStyle":"appliedColor",
+        "fontName":"应用字体",
+        "borderWidth":"0"},
+      "adaptiveStyles":{
+},
+      "interactionMap":{
+},
+      "diagram":{
+        "objects":[{
+            "id":"d750205dfa844b70b5b3ad869389d788",
+            "label":"",
+            "type":"dynamicPanel",
+            "styleType":"dynamicPanel",
+            "visible":true,
+            "style":{
+              "size":{
+                "width":360,
+                "height":50}},
+            "adaptiveStyles":{
+},
+            "scrollbars":"none",
+            "fitToContent":false,
+            "propagate":false,
+            "diagrams":[{
+                "id":"896d8fd6c6064b03a75ffed395618908",
+                "label":"State1",
+                "type":"Axure:PanelDiagram",
+                "objects":[]}]},
+{
+            "id":"1c28d63618b14ffbbdc34c128b91e493",
+            "label":"",
+            "type":"buttonShape",
+            "styleType":"buttonShape",
+            "visible":true,
+            "style":{
+              "fontName":"'Applied Font Regular', 'Applied Font'",
+              "fill":{
+                "fillType":"solid",
+                "color":0xFF009DD9},
+              "size":{
+                "width":360,
+                "height":50}},
+            "adaptiveStyles":{
+},
+            "objects":[{
+                "id":"5f2b8ec27df740dd90020671b0016766",
+                "label":"",
+                "isContained":true,
+                "type":"richTextPanel",
+                "styleType":"paragraph",
+                "visible":true,
+                "style":{
+                  "fontName":"'Applied Font Regular', 'Applied Font'",
+                  "fill":{
+                    "fillType":"solid",
+                    "color":0xFF009DD9},
+                  "size":{
+                    "width":360,
+                    "height":50}},
+                "adaptiveStyles":{
+}}],
+            "images":{
+              "normal~":"images/login/u27.png"}}]}}},
+  "objectPaths":{
+    "8d09f8e5209c4f54b3b8efd2ed956a9c":{
+      "scriptId":"u0",
+      "d99712befac24279b86a34aae3f33907":{
+        "scriptId":"u1"},
+      "dabd537881e345b2b281223650e11a9a":{
+        "scriptId":"u2"},
+      "f5852b1d91914e1a8d59b0e4edf121c0":{
+        "scriptId":"u3"},
+      "030da254b08b4dd5aab2d7d95f4f332f":{
+        "scriptId":"u4"},
+      "9e71f397c87f4f62a605868be6c8312d":{
+        "scriptId":"u5"},
+      "24b95faa0fb44d3ab597259c3c24d1f6":{
+        "scriptId":"u6"},
+      "26b91ea1ca154fdca046593f0212a0ca":{
+        "scriptId":"u7"},
+      "47bd1d8a565c48b29534a6b0c7960e69":{
+        "scriptId":"u8"}},
+    "0ab764ee5ed14c3384d4811b8358423a":{
+      "scriptId":"u9",
+      "d750205dfa844b70b5b3ad869389d788":{
+        "scriptId":"u10"},
+      "1c28d63618b14ffbbdc34c128b91e493":{
+        "scriptId":"u11"},
+      "5f2b8ec27df740dd90020671b0016766":{
+        "scriptId":"u12"}},
+    "7c086f36f0ec41c3bf5305fa05a92494":{
+      "scriptId":"u13"},
+    "1c844d65ce91444da64ebdaa8038f036":{
+      "scriptId":"u14"},
+    "fd88358117fc4f2890ab6da7faf681c7":{
+      "scriptId":"u15"},
+    "1f60feefa8cf43a1a1d9f66c14d6f972":{
+      "scriptId":"u16"},
+    "e02e69c5d8dc4dcaa814eb2e0f1b3d81":{
+      "scriptId":"u17"},
+    "b5efd011a3fe4f93b9b1fa3f69dcf497":{
+      "scriptId":"u18"},
+    "6ebbceceb35944f5a5d0458b81eff51b":{
+      "scriptId":"u19"},
+    "b381fd2399c44764aa41109f1af6da6a":{
+      "scriptId":"u20"},
+    "73a1da74b36d4e38a2cb3226d5b07cac":{
+      "scriptId":"u21"},
+    "3927b87eab164734aab78751d4335b86":{
+      "scriptId":"u22"},
+    "e490989a764a407ebf8de76a9c8b101b":{
+      "scriptId":"u23"},
+    "616293b804fe44b1a2b476116445eda0":{
+      "scriptId":"u24"},
+    "cf09e47edf32448091b19d08c049986c":{
+      "scriptId":"u25"},
+    "1c7313bc422a46d5b2656317e7951999":{
+      "scriptId":"u26"},
+    "d13e7280c7474ee592816abca564a7f8":{
+      "scriptId":"u27"},
+    "8c000841268d403db494a18d7a0dce8a":{
+      "scriptId":"u28"},
+    "a5fc9a1775cd4b16bad762f086388974":{
+      "scriptId":"u29"},
+    "628c91ac13164fd5a8f29afdf8067176":{
+      "scriptId":"u30"},
+    "80d7170edfef46298a878a5769283701":{
+      "scriptId":"u31"},
+    "642c6ac039d945368638559d298ff731":{
+      "scriptId":"u32"},
+    "01f917768118496ca45438c1096bf106":{
+      "scriptId":"u33"},
+    "7b1610504a9e4a7c9a3772c4a4a5de7e":{
+      "scriptId":"u34"},
+    "7040ece1d4d545ef82e1b8616ed454fd":{
+      "scriptId":"u35"},
+    "b5f09c9a4140425f8b168a8c9632c073":{
+      "scriptId":"u36"},
+    "f8987b21a979416c9e1fbec8b097f9d7":{
+      "scriptId":"u37"},
+    "e95dfa2691c64501b6f47be53e27ae32":{
+      "scriptId":"u38"},
+    "d98abe1beea444a1babd913df87cb699":{
+      "scriptId":"u39"},
+    "f2e55e8b160548959980b59a3380c761":{
+      "scriptId":"u40"},
+    "40513e92e77f490a9fbc061408b7ff98":{
+      "scriptId":"u41"},
+    "fe8ea39cbd8d403c8c09f0d7a88bc3a8":{
+      "scriptId":"u42"},
+    "73e88b13c22c4bf089c4a051d22fbdc6":{
+      "scriptId":"u43"},
+    "f9182a8db27a4982af7ce64494fc8229":{
+      "scriptId":"u44"},
+    "ecd452dd02ed49bfa2b33b1d5835b271":{
+      "scriptId":"u45"},
+    "42e92a6844a441e6b520df7c38c62df4":{
+      "scriptId":"u46"},
+    "334f726eb5374bb2a2ec8a445dc79bbb":{
+      "scriptId":"u47"},
+    "f17664de92df4d6ebdc91894d9a7e719":{
+      "scriptId":"u48"},
+    "609944ad7759417c8ad1c09c0b9f8851":{
+      "scriptId":"u49"},
+    "2eafc5f63af940a5885079275dd098fe":{
+      "scriptId":"u50"},
+    "91261609cdf94023ba001a67e0504cd1":{
+      "scriptId":"u51"},
+    "45af57de158f47d49a34d86de43ed141":{
+      "scriptId":"u52"},
+    "af5eae2b1248492682e2d9fa44d5b5be":{
+      "scriptId":"u53"},
+    "70911e30dbe245b49623d727735aa974":{
+      "scriptId":"u54"},
+    "85e094045a1a41088a80aa8198b159b5":{
+      "scriptId":"u55"},
+    "39eda19c54304618971286d83794057e":{
+      "scriptId":"u56"},
+    "d1f33adebbcc4e67a2afbab515a0e128":{
+      "scriptId":"u57"},
+    "69ee5022e1b24199a94f0653583fdfdd":{
+      "scriptId":"u58"},
+    "b5605d86f7d64bbca1cdb00d7d2852be":{
+      "scriptId":"u59"},
+    "f486236e96c44d389c07d3298d81d05b":{
+      "scriptId":"u60"},
+    "90f104dc13da4e959a5352a5b2f8421c":{
+      "scriptId":"u61"},
+    "5a5b2f6e99f94adcac26d465e82764eb":{
+      "scriptId":"u62"},
+    "55af9e89290140d79fac578cf3ee7779":{
+      "scriptId":"u63"},
+    "7380d50f6c4942368aa1af4c3a5e8b4b":{
+      "scriptId":"u64"},
+    "241b2ef7b9d14b8aa99c290719ac2736":{
+      "scriptId":"u65"},
+    "3fdb1b092ec04e16951218a49f46af04":{
+      "scriptId":"u66"},
+    "c11cd836785a498bb1c43fe81b395666":{
+      "scriptId":"u67"},
+    "d8a77ea5b1154ca184f53736b9ee1e68":{
+      "scriptId":"u68"},
+    "3c54b5ef701b414297d02454ab52d93a":{
+      "scriptId":"u69"},
+    "2c7003c869044405991faaa13dfd687b":{
+      "scriptId":"u70"},
+    "59c2d4fa2e1140d0b0361258c010b8e3":{
+      "scriptId":"u71"},
+    "0763e73d82de4828a729c9b3fa9144e8":{
+      "scriptId":"u72"},
+    "c3b47db6c883450cbfc2d4f2a760032e":{
+      "scriptId":"u73"},
+    "42f1decad9824fdb9f9b21746db1b718":{
+      "scriptId":"u74"},
+    "a3e0b806e3234117b0bc5b7e95019094":{
+      "scriptId":"u75"},
+    "405969917fcb4497af0f2a388a7e88d7":{
+      "scriptId":"u76"},
+    "19c5059eedac4692a4753c41c6a12e5d":{
+      "scriptId":"u77"},
+    "ad5720769d2b4d27acce6eb4063942ec":{
+      "scriptId":"u78"},
+    "3c3ed181b1e24a22854be6771a236cee":{
+      "scriptId":"u79"},
+    "8db3247a65f044d98fa37358e023f90e":{
+      "scriptId":"u80"},
+    "d89fb4bb69da48a98529eb145d368462":{
+      "scriptId":"u81"},
+    "2a29f6b0ba924ccdb817de080977dffe":{
+      "scriptId":"u82"},
+    "af67165a43b54bc880446feeb2646df4":{
+      "scriptId":"u83"},
+    "ba31b2b15eec406a8aa578972b19e801":{
+      "scriptId":"u84"},
+    "43a2a1f14c984b0480b45105cf9e5a60":{
+      "scriptId":"u85"},
+    "81456b208b1c423a9636f3609fe7b924":{
+      "scriptId":"u86"},
+    "7ef3d84b735f4e9f892693b0afdd7f5b":{
+      "scriptId":"u87"},
+    "944c82fe29514fc18e7356657e0a6c0b":{
+      "scriptId":"u88"},
+    "e721e597f4b14ba08521f4596ddf9482":{
+      "scriptId":"u89"},
+    "3484a154d83d4797a69677ba54401c96":{
+      "scriptId":"u90"},
+    "fc212052047d4ff6ab49381f485e8ca0":{
+      "scriptId":"u91"},
+    "c4e4df0cc44c40158c73f7cafe1ae431":{
+      "scriptId":"u92"},
+    "a2ab637785e848108876057d578bc8a9":{
+      "scriptId":"u93"},
+    "e1229b2648424f4c9e944020f622ea34":{
+      "scriptId":"u94"},
+    "bd5d3f46aaf8443fa48b8a97bc8bcda1":{
+      "scriptId":"u95"},
+    "8612500aeffd4aa68588b563bdfc5a0c":{
+      "scriptId":"u96"},
+    "4fc6ed5a4ea446d8a933eb3cc2e59c81":{
+      "scriptId":"u97"},
+    "ecc95fccd5bf46bea3622e9a86dda13e":{
+      "scriptId":"u98"},
+    "089e88ec26c54d699f33850aa6dae542":{
+      "scriptId":"u99"},
+    "78bfecbefcc74db797e8d4777d087cbd":{
+      "scriptId":"u100"},
+    "b7108ebf0b8f4614950328cb901e367e":{
+      "scriptId":"u101"},
+    "fc615cc4da564dc991628030715decb9":{
+      "scriptId":"u102"},
+    "2ec49a2de43a408bac4f46f4bfaa195f":{
+      "scriptId":"u103"},
+    "e828df57238a4a4aa458c9f0262c2dfc":{
+      "scriptId":"u104"},
+    "2ce22984d0944c2985197bd7d3393df6":{
+      "scriptId":"u105"},
+    "56fc5a55607a45ac9a8f90ed8225ab83":{
+      "scriptId":"u106"},
+    "4f44aa8a0e104c12b3af5673754eeb36":{
+      "scriptId":"u107"},
+    "b702cfd2d463466c803f10210ad62acc":{
+      "scriptId":"u108"},
+    "21308bde6cea468ea4fb2a249d4283a3":{
+      "scriptId":"u109"},
+    "01534e13999d4414ac59ea485f156a45":{
+      "scriptId":"u110"},
+    "77331796b38d435cadafd6b298d7853a":{
+      "scriptId":"u111"},
+    "e3f12879cd9546efbcd1da1149effea0":{
+      "scriptId":"u112"},
+    "346bcc491de7405aa1de49f796fdcbb3":{
+      "scriptId":"u113"},
+    "ce9cba8fa8c34b9f9f4555c31fc157d2":{
+      "scriptId":"u114"},
+    "e7757ce7fb364157a4754e6258e77d43":{
+      "scriptId":"u115"},
+    "755cd0fd384348ef9375eccfad749f50":{
+      "scriptId":"u116"},
+    "0e1ade26a97048a9bedf26d029d5f219":{
+      "scriptId":"u117"},
+    "8ef0de7a647340328f6f464ca1d8349f":{
+      "scriptId":"u118"},
+    "153221f974334171bb23ef7003abded9":{
+      "scriptId":"u119"},
+    "e6bef9bc59ec4840abab88de35a6f5fb":{
+      "scriptId":"u120"},
+    "ecd4c615d0f74fe4be21a22d4fbd7255":{
+      "scriptId":"u121"},
+    "c1bb509090884e1ab48598942d78d005":{
+      "scriptId":"u122"},
+    "0b0f8bb5664a4eaa9ad7d09c61d4bb47":{
+      "scriptId":"u123"},
+    "2cfb09b9776b4ec0bcd13004bff9080f":{
+      "scriptId":"u124"},
+    "23e5ba39f5e0405aa3aa84eba66f5df4":{
+      "scriptId":"u125"},
+    "94d42af6c5b04d56bbbeedb5eef4492d":{
+      "scriptId":"u126"},
+    "bb46d19468f64484aed6b7c266c5dc01":{
+      "scriptId":"u127"},
+    "e72bbdf26fc04a64826e5a44ed514c44":{
+      "scriptId":"u128"},
+    "d943e34ac2f14cb6828fc107ac2d97ad":{
+      "scriptId":"u129"},
+    "f1fee90d41254041b02b6fad0fc77e17":{
+      "scriptId":"u130"},
+    "a22a961f120d439bb8e28b68f81ef79e":{
+      "scriptId":"u131"},
+    "67a62ab6848a46b08577ab300f447c67":{
+      "scriptId":"u132"},
+    "19e39b46eebc4303b3de8d94219e77b1":{
+      "scriptId":"u133"},
+    "38fd952de2714f5d8be9cd2a35af52ca":{
+      "scriptId":"u134"},
+    "ff211430f2fb48b58f3ca547581b35e7":{
+      "scriptId":"u135"},
+    "bc9f1080181545a8a5aad860e49b5d63":{
+      "scriptId":"u136"},
+    "74d21cef21a3465b8d4fdb7beedeca34":{
+      "scriptId":"u137"},
+    "0093e9bd410848b6b94aa59a243e38f5":{
+      "scriptId":"u138"},
+    "df5e079f05cd40c491f80da95e8cb4f3":{
+      "scriptId":"u139"},
+    "aa939116aed146cea41a4fbdca71f093":{
+      "scriptId":"u140"},
+    "98a52052dc7a4047906eb9a1483dbc70":{
+      "scriptId":"u141"},
+    "166ea948ae4f43cea67a20fce73c4617":{
+      "scriptId":"u142"},
+    "3a2804bb309243b080411c6d2c42d898":{
+      "scriptId":"u143"},
+    "a144fcd270a2456bbf637fff51299faa":{
+      "scriptId":"u144"},
+    "9e8ceaab61d149b2812ac066d47f90e9":{
+      "scriptId":"u145"},
+    "d09f6b74046c4949a1907f798f4a5225":{
+      "scriptId":"u146"},
+    "f71cdaaa819a4588b10c0a26099efb83":{
+      "scriptId":"u147"},
+    "860a250e45124d61a82b46d6e60287c9":{
+      "scriptId":"u148"},
+    "6fe90d27b2754938a76b6661803e4917":{
+      "scriptId":"u149"},
+    "165e2fc255f64eb7a784127395e71d73":{
+      "scriptId":"u150"},
+    "c9414f6dda344b528f244d120e612bf5":{
+      "scriptId":"u151"},
+    "9536c9db58ed4f0b81a07d42d5a844bd":{
+      "scriptId":"u152"},
+    "13d41638f6ce4833ae3f48b6dd0d098f":{
+      "scriptId":"u153"},
+    "f3eb6ca52d9a4002b913d1fb127e1b41":{
+      "scriptId":"u154"},
+    "72ba5aba09d042afa0ffd5e417547354":{
+      "scriptId":"u155"},
+    "0323e83205ff487fb753ea87457e0615":{
+      "scriptId":"u156"},
+    "3592ff04e2ce440f8e25ac76f9c3ad39":{
+      "scriptId":"u157"},
+    "d485675aec954c938a6e57afa08ac0fe":{
+      "scriptId":"u158"},
+    "aa391ace637840388eb5e88271c66a4f":{
+      "scriptId":"u159"},
+    "d762c677b92f4a6b90e74120aab67562":{
+      "scriptId":"u160"},
+    "09ab0060bfe94999a2182ea061c299cd":{
+      "scriptId":"u161"},
+    "b8bdb944d081432d8db1c86c3a815880":{
+      "scriptId":"u162"},
+    "2f7b2749442940b7800dbd2a56f9fd17":{
+      "scriptId":"u163"},
+    "9fe499fa23fd48f8b0ad99967e7dc6b0":{
+      "scriptId":"u164"},
+    "0d15e6e07d2c4b1181d8e786558959d8":{
+      "scriptId":"u165"},
+    "3c78391c597d4ac189c1084214f225b5":{
+      "scriptId":"u166"},
+    "2bd634089d6e4d1f9a387413da6d5899":{
+      "scriptId":"u167"},
+    "83a624f307c1457b90c43de58ba953fe":{
+      "scriptId":"u168"},
+    "830200e6f0a543c18b30b86aa0ffc425":{
+      "scriptId":"u169"},
+    "5b5137eca78f460ea6af59f627bb9137":{
+      "scriptId":"u170"},
+    "a08f82701d7c4b20bf9f7e8dead9f760":{
+      "scriptId":"u171"},
+    "d34161be3d794582a0ab9d66e601b0d6":{
+      "scriptId":"u172"},
+    "53b490b1dab64162808444e0fecc06a2":{
+      "scriptId":"u173"},
+    "71f9a5980ea747ce93f386952f25cf08":{
+      "scriptId":"u174"},
+    "dc3512b091264ffa8902e85f328ee5f1":{
+      "scriptId":"u175"},
+    "1d361c6b5f2d45258de8df56d1e71a39":{
+      "scriptId":"u176"},
+    "16f5f64dcbf54bb9b7651f764d4ac9d3":{
+      "scriptId":"u177"},
+    "8674ad27cac84117942bdedfb2cce14b":{
+      "scriptId":"u178"},
+    "1636f49a36f9491abe532a991fe72a53":{
+      "scriptId":"u179"},
+    "b27a7b95de134c5c8d547ce6c3f25558":{
+      "scriptId":"u180"},
+    "d76d19516b494619920cbfd7c8cdcff9":{
+      "scriptId":"u181"},
+    "5a69b04caebb4b6ba2b77dbebc6d512c":{
+      "scriptId":"u182"},
+    "ebd5bef9adbc49428687024e0a5e8d5b":{
+      "scriptId":"u183"},
+    "3dbea836074b44beb045594cf2357585":{
+      "scriptId":"u184"},
+    "82229341f7be4568b54306e59284da04":{
+      "scriptId":"u185"},
+    "5983173ead584dfc846d8a8a185739b5":{
+      "scriptId":"u186"},
+    "3342db9fd3cb461d9fb5e224e142bee1":{
+      "scriptId":"u187"},
+    "1e2199555fba409d9761c2003471a9d6":{
+      "scriptId":"u188"},
+    "3e3a4b39bb8d4383b905a35dba231524":{
+      "scriptId":"u189"},
+    "0b5cf7ec60a74bbfa9effc20956a2b88":{
+      "scriptId":"u190"},
+    "0fc3a26526a84a7ba7f1b4487f079a8b":{
+      "scriptId":"u191"},
+    "0ff5828427f94d088350bb163d7758a6":{
+      "scriptId":"u192"},
+    "a5a368029b0643609587b857b79f942e":{
+      "scriptId":"u193"},
+    "82b7245eb892409291abb009c0f64b15":{
+      "scriptId":"u194"},
+    "6612df32284c427184cd6e218d8f22ad":{
+      "scriptId":"u195"},
+    "4b44c381304a4e9780fd6ec5b0248287":{
+      "scriptId":"u196"},
+    "0c9d04e07aff4a27a8a9e458eb4ea743":{
+      "scriptId":"u197"},
+    "f0199723172441618044ed9e03584bd9":{
+      "scriptId":"u198"},
+    "027c1f08233849b6bffbd04bd84f6bd7":{
+      "scriptId":"u199"},
+    "a5bc7e2f086d4cfcaf9426de9696d42f":{
+      "scriptId":"u200"},
+    "0c00d816149a4f2a867583cf7c756995":{
+      "scriptId":"u201"},
+    "684bc4cd7b554d2899d14b10d9f0dd66":{
+      "scriptId":"u202"},
+    "e0ec305722c7466b840241990c27aa47":{
+      "scriptId":"u203"},
+    "e56a8327483f45238de763335c7d1030":{
+      "scriptId":"u204"},
+    "e10358e6896748d68eafd3de4201c5b2":{
+      "scriptId":"u205"},
+    "b34b78f2c0ab45c1aa3363b062a21928":{
+      "scriptId":"u206"},
+    "b38f196672424484aed11a066dd8ef96":{
+      "scriptId":"u207"},
+    "6e34dcb00bfc4cb3b1519f903f18016c":{
+      "scriptId":"u208"},
+    "914a381c40c746a995eb2477ef565c3e":{
+      "scriptId":"u209"},
+    "6a08869d6cdf4e20afe30fa0f7d74151":{
+      "scriptId":"u210"},
+    "88fe30067cbd4923bc8d6c0085d7a227":{
+      "scriptId":"u211"},
+    "f0d5ba19dceb407b88f63895808c6f87":{
+      "scriptId":"u212"},
+    "8fb3a347f2684866a75aad5d2347e603":{
+      "scriptId":"u213"},
+    "a604d3d555434ba0800da38f860bce4d":{
+      "scriptId":"u214"},
+    "ae0d34fadb154d13bdf6d39e0cbd9192":{
+      "scriptId":"u215"},
+    "824b61d3235e4c2abba6d6526ef093de":{
+      "scriptId":"u216"},
+    "d15101703377445b9ae9756a54336649":{
+      "scriptId":"u217"},
+    "ac2277cd93de4433bdf1752a7e8be143":{
+      "scriptId":"u218"},
+    "d9a9ea2cb83d4bc9b9adcdf35d9028f3":{
+      "scriptId":"u219"},
+    "9cbb10be134f4ceb9870f25f84538ad7":{
+      "scriptId":"u220"},
+    "9d173c991f7c4b4ba706f3da5b9d5d32":{
+      "scriptId":"u221"},
+    "777b5f4f2c6f406c987ac313e1cfa047":{
+      "scriptId":"u222"},
+    "b48e82ee5e7947508ddd52290deabd14":{
+      "scriptId":"u223"},
+    "6ac7075ec06948d4859fdf36f5d0c531":{
+      "scriptId":"u224"},
+    "bb19d7ebeb994f56ac4553106fb8f560":{
+      "scriptId":"u225"},
+    "117fff6550064000a1619a0c46a75583":{
+      "scriptId":"u226"},
+    "879423af8af747f68b458a806d43a8b9":{
+      "scriptId":"u227"},
+    "af6d76a6f77b4cebbcf6a0335313ef5c":{
+      "scriptId":"u228"},
+    "b243ba71701c49d9b7f7992dd7bb9c06":{
+      "scriptId":"u229"},
+    "e32dc567371b4b7189c047be2b8e00e0":{
+      "scriptId":"u230"},
+    "dd829b46ff05416998c03906f53f806d":{
+      "scriptId":"u231"},
+    "32636a75217b4f2388446393e0c1f002":{
+      "scriptId":"u232"},
+    "50c707597c2c4b1fb5142312933a733d":{
+      "scriptId":"u233"},
+    "3e9acc8b959d47d7a08ed59410253fbe":{
+      "scriptId":"u234"},
+    "6e1a1a51430a4119991e06827026c313":{
+      "scriptId":"u235"},
+    "1c15cb9aafe7428dafd4fe218e0f22b5":{
+      "scriptId":"u236"},
+    "3f709c6d2bb04ffebd4b1ac7cc1bfa5c":{
+      "scriptId":"u237"},
+    "e66f3976744647b3a71e939783a6722e":{
+      "scriptId":"u238"},
+    "0a5595db36724a70909d7f29457a512f":{
+      "scriptId":"u239"},
+    "82ff09d961b24b71b3b9041ad351d5eb":{
+      "scriptId":"u240"},
+    "fa8bbc55b7524307a62605252f89ca0d":{
+      "scriptId":"u241"},
+    "2a0871500a704223b327819949318310":{
+      "scriptId":"u242"},
+    "4477ecb075134473aa0c40fc4e5c65ff":{
+      "scriptId":"u243"},
+    "133102608c0840e984ad4b8daab59eaf":{
+      "scriptId":"u244"},
+    "f69745176a4744cfbef1e62d46f43536":{
+      "scriptId":"u245"},
+    "8ac0427021da4624a793c9f31a7e0550":{
+      "scriptId":"u246"},
+    "14c4dde87fa74ee09a3fc22350bdc815":{
+      "scriptId":"u247"},
+    "c5083874db3c41fa97fba885f4eac95a":{
+      "scriptId":"u248"},
+    "9768975d0d0e4cdeb93320c7ffe8139e":{
+      "scriptId":"u249"},
+    "1e74bd2217d44cb8a67ffaca79025721":{
+      "scriptId":"u250"},
+    "4cd2d3c89d0c4977b56d446e27f5f7fd":{
+      "scriptId":"u251"},
+    "b7904f204b2a4df2b05f7a8f76b99303":{
+      "scriptId":"u252"},
+    "f4f63681af72489788159ad0098d00bf":{
+      "scriptId":"u253"},
+    "8d2c791384334d179a86b381960d7548":{
+      "scriptId":"u254"},
+    "642a7196c2774fb4a8c5e708f6f4f01f":{
+      "scriptId":"u255"},
+    "38ebcda757754206afdced1846a82b37":{
+      "scriptId":"u256"},
+    "215f83bd99a44bed831f0d250b60a251":{
+      "scriptId":"u257"},
+    "c498876f56964fa3b2109d74ac9d54a6":{
+      "scriptId":"u258"},
+    "dfaafc9ddbc64b39807c2e24e11b31e8":{
+      "scriptId":"u259"},
+    "3e9637fb52414bf692f96e71345b9a5e":{
+      "scriptId":"u260"},
+    "e5e3510b395b47be8202fef0638dfdb6":{
+      "scriptId":"u261"},
+    "a0cedca9c2964236a7142791b90deaa7":{
+      "scriptId":"u262"},
+    "0744428e92c847b6b3e0b1d8fd184618":{
+      "scriptId":"u263"},
+    "e30d759b618e41b89775b645d4763326":{
+      "scriptId":"u264"},
+    "e301d4c5285b41f288d4c905e3f74610":{
+      "scriptId":"u265"},
+    "044c0c610e98479c9584c0ebb894a780":{
+      "scriptId":"u266"},
+    "496e3d6e06a040418ce8d033fb92e82b":{
+      "scriptId":"u267"}}});

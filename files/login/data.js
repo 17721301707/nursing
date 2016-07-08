@@ -1,0 +1,1996 @@
+﻿$axure.loadCurrentPage({
+  "url":"login.html",
+  "generationDate":new Date(1467783355538.27),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable",
+"username",
+"account",
+"home",
+"dept"],
+  "page":{
+    "packageId":"480dcaa98d5e4189b1e143281ade4a39",
+    "type":"Axure:Page",
+    "name":"login",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+      "onLoad":{
+        "description":"OnLoad",
+        "cases":[{
+            "description":"用例 1<br> (If 值于 dept 等于 &quot;科室&quot;)",
+            "isNewIfGroup":false,
+            "condition":{
+              "exprType":"binaryOp",
+              "op":"==",
+              "leftExpr":{
+                "exprType":"fcall",
+                "functionName":"GetGlobalVariableValue",
+                "arguments":[{
+                    "exprType":"globalVariableLiteral",
+                    "variableName":"dept"}]},
+              "rightExpr":{
+                "exprType":"stringLiteral",
+                "value":"科室",
+                "stos":[]}},
+            "actions":[{
+                "action":"setPanelState",
+                "description":"设置 登录面板 to 选择科室 显示隐藏",
+                "panelsToStates":[{
+                    "panelPath":["44c61f0cd16244119419b3cc8d098928"],
+                    "stateInfo":{
+                      "setStateType":"diagram",
+                      "stateNumber":2,
+                      "stateValue":{
+                        "exprType":"stringLiteral",
+                        "value":"1",
+                        "stos":[]},
+                      "loop":false,
+                      "showWhenSet":true,
+                      "options":{
+                        "compress":false}}}]}]}]}},
+    "diagram":{
+      "objects":[{
+          "id":"5a01e12e967546aeb1bc80c3da262a5e",
+          "label":"",
+          "type":"referenceDiagramObject",
+          "styleType":"referenceDiagramObject",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":10,
+              "y":10}},
+          "adaptiveStyles":{
+},
+          "masterId":"2d7d071180014c38b40748006bf62620"},
+{
+          "id":"44c61f0cd16244119419b3cc8d098928",
+          "label":"登录面板",
+          "type":"dynamicPanel",
+          "styleType":"dynamicPanel",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":53,
+              "y":140},
+            "size":{
+              "width":360,
+              "height":570}},
+          "adaptiveStyles":{
+},
+          "scrollbars":"none",
+          "fitToContent":false,
+          "propagate":false,
+          "diagrams":[{
+              "id":"68f63119e2ac40b1afd8bab652bd3126",
+              "label":"登录账号",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"2725c5daf7f3464b92f8f443165cfa62",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFFEDF0F7},
+                    "size":{
+                      "width":360,
+                      "height":570}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"b23c32c649924109a361dcdb3847ef24",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFFEDF0F7},
+                        "size":{
+                          "width":360,
+                          "height":570}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/login/u10.png"}},
+{
+                  "id":"f0454d1cd1604a389f8ca07d3f9a3909",
+                  "label":"login_icon",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":132,
+                      "y":90},
+                    "size":{
+                      "width":96,
+                      "height":90}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"9256859335a248c5bfdd5fed65c6fed2",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":132,
+                          "y":90},
+                        "size":{
+                          "width":96,
+                          "height":90}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"images/login/login_icon_u12.png"}},
+{
+                  "id":"a3b143b4b3684ceab9bfdd71076498cd",
+                  "label":"userName",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"textBox",
+                  "styleType":"textBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC,
+                      "opacity":1},
+                    "location":{
+                      "x":80,
+                      "y":230},
+                    "size":{
+                      "width":200,
+                      "height":30}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onTextChange":{
+                      "description":"OnTextChange",
+                      "cases":[{
+                          "description":"userName内容改变时",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"设置 login_error to hide error",
+                              "panelsToStates":[{
+                                  "panelPath":["c68855f796184db3b347493ea493ac8b"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":4,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":false,
+                                    "options":{
+                                      "compress":false}}}]}]}]},
+                    "onFocus":{
+                      "description":"OnFocus",
+                      "cases":[{
+                          "description":"userName获取焦点时<br> (If 文字于 userName 等于 &quot;工号/电话号码/邮箱&quot;)",
+                          "isNewIfGroup":false,
+                          "condition":{
+                            "exprType":"binaryOp",
+                            "op":"==",
+                            "leftExpr":{
+                              "exprType":"fcall",
+                              "functionName":"GetWidgetText",
+                              "arguments":[{
+                                  "exprType":"pathLiteral",
+                                  "isThis":false,
+                                  "isFocused":false,
+                                  "isTarget":false,
+                                  "value":["a3b143b4b3684ceab9bfdd71076498cd"]}]},
+                            "rightExpr":{
+                              "exprType":"stringLiteral",
+                              "value":"工号/电话号码/邮箱",
+                              "stos":[]}},
+                          "actions":[{
+                              "action":"setFunction",
+                              "description":"设置 文字于 userName = &quot;&quot;",
+                              "expr":{
+                                "exprType":"block",
+                                "subExprs":[{
+                                    "exprType":"fcall",
+                                    "functionName":"SetWidgetFormText",
+                                    "arguments":[{
+                                        "exprType":"pathLiteral",
+                                        "isThis":false,
+                                        "isFocused":false,
+                                        "isTarget":false,
+                                        "value":["a3b143b4b3684ceab9bfdd71076498cd"]},
+{
+                                        "exprType":"stringLiteral",
+                                        "value":"",
+                                        "stos":[]}]}]}}]}]},
+                    "onLostFocus":{
+                      "description":"OnLostFocus",
+                      "cases":[{
+                          "description":"userName失去焦点时<br> (If 文字于 userName 等于 &quot;&quot;)",
+                          "isNewIfGroup":false,
+                          "condition":{
+                            "exprType":"binaryOp",
+                            "op":"==",
+                            "leftExpr":{
+                              "exprType":"fcall",
+                              "functionName":"GetWidgetText",
+                              "arguments":[{
+                                  "exprType":"pathLiteral",
+                                  "isThis":false,
+                                  "isFocused":false,
+                                  "isTarget":false,
+                                  "value":["a3b143b4b3684ceab9bfdd71076498cd"]}]},
+                            "rightExpr":{
+                              "exprType":"stringLiteral",
+                              "value":"",
+                              "stos":[]}},
+                          "actions":[{
+                              "action":"setFunction",
+                              "description":"设置 文字于 userName = &quot;工号/电话号码/邮箱&quot;",
+                              "expr":{
+                                "exprType":"block",
+                                "subExprs":[{
+                                    "exprType":"fcall",
+                                    "functionName":"SetWidgetFormText",
+                                    "arguments":[{
+                                        "exprType":"pathLiteral",
+                                        "isThis":false,
+                                        "isFocused":false,
+                                        "isTarget":false,
+                                        "value":["a3b143b4b3684ceab9bfdd71076498cd"]},
+{
+                                        "exprType":"stringLiteral",
+                                        "value":"工号/电话号码/邮箱",
+                                        "stos":[]}]}]}}]}]}},
+                  "tabbable":true},
+{
+                  "id":"52c8a9c3ffc843f38486bfe9bd317aa1",
+                  "label":"Password",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"textBox",
+                  "styleType":"textBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC,
+                      "opacity":1},
+                    "location":{
+                      "x":80,
+                      "y":270},
+                    "size":{
+                      "width":200,
+                      "height":30}},
+                  "adaptiveStyles":{
+},
+                  "interactionMap":{
+                    "onFocus":{
+                      "description":"OnFocus",
+                      "cases":[{
+                          "description":"password获取焦点时 hide error",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"设置 login_error to hide error",
+                              "panelsToStates":[{
+                                  "panelPath":["c68855f796184db3b347493ea493ac8b"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":4,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":false,
+                                    "options":{
+                                      "compress":false}}}]}]}]}},
+                  "tabbable":true},
+{
+                  "id":"bb1084531e74439b94fb4d2447b54863",
+                  "label":"loginBtn",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFFFF,
+                      "opacity":1},
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFF57677B},
+                    "location":{
+                      "x":80,
+                      "y":320},
+                    "size":{
+                      "width":200,
+                      "height":35},
+                    "cornerRadiusTopLeft":"5"},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"850eb54e38954378a9c77db2c3011d6b",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "foreGroundFill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFFFF,
+                          "opacity":1},
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFF57677B},
+                        "location":{
+                          "x":80,
+                          "y":320},
+                        "size":{
+                          "width":200,
+                          "height":35},
+                        "cornerRadiusTopLeft":"5"},
+                      "adaptiveStyles":{
+}}],
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"loginBtn点击时 userName为null<br> (If 文字于 userName 等于 &quot;&quot; 或 文字于 userName 等于 &quot;工号/电话号码/邮箱&quot;)",
+                          "isNewIfGroup":false,
+                          "condition":{
+                            "exprType":"binaryOp",
+                            "op":"||",
+                            "leftExpr":{
+                              "exprType":"binaryOp",
+                              "op":"==",
+                              "leftExpr":{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["a3b143b4b3684ceab9bfdd71076498cd"]}]},
+                              "rightExpr":{
+                                "exprType":"stringLiteral",
+                                "value":"",
+                                "stos":[]}},
+                            "rightExpr":{
+                              "exprType":"binaryOp",
+                              "op":"==",
+                              "leftExpr":{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["a3b143b4b3684ceab9bfdd71076498cd"]}]},
+                              "rightExpr":{
+                                "exprType":"stringLiteral",
+                                "value":"工号/电话号码/邮箱",
+                                "stos":[]}}},
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"设置 login_error to userName is null 显示隐藏",
+                              "panelsToStates":[{
+                                  "panelPath":["c68855f796184db3b347493ea493ac8b"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":1,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":true,
+                                    "options":{
+                                      "compress":false}}}]}]},
+{
+                          "description":"loginBtn单击时 Password 为null<br> (Else If 文字于 Password 等于 &quot;&quot;)",
+                          "isNewIfGroup":false,
+                          "condition":{
+                            "exprType":"binaryOp",
+                            "op":"==",
+                            "leftExpr":{
+                              "exprType":"fcall",
+                              "functionName":"GetWidgetText",
+                              "arguments":[{
+                                  "exprType":"pathLiteral",
+                                  "isThis":false,
+                                  "isFocused":false,
+                                  "isTarget":false,
+                                  "value":["52c8a9c3ffc843f38486bfe9bd317aa1"]}]},
+                            "rightExpr":{
+                              "exprType":"stringLiteral",
+                              "value":"",
+                              "stos":[]}},
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"设置 login_error to Password is null 显示隐藏",
+                              "panelsToStates":[{
+                                  "panelPath":["c68855f796184db3b347493ea493ac8b"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":2,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":true,
+                                    "options":{
+                                      "compress":false}}}]}]},
+{
+                          "description":"loginBtn单击时 userName or Password is wrong<br> (Else If 文字于 userName ≠ &quot;admin&quot; 和 文字于 Password ≠ &quot;admin&quot;)",
+                          "isNewIfGroup":false,
+                          "condition":{
+                            "exprType":"binaryOp",
+                            "op":"&&",
+                            "leftExpr":{
+                              "exprType":"binaryOp",
+                              "op":"!=",
+                              "leftExpr":{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["a3b143b4b3684ceab9bfdd71076498cd"]}]},
+                              "rightExpr":{
+                                "exprType":"stringLiteral",
+                                "value":"admin",
+                                "stos":[]}},
+                            "rightExpr":{
+                              "exprType":"binaryOp",
+                              "op":"!=",
+                              "leftExpr":{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["52c8a9c3ffc843f38486bfe9bd317aa1"]}]},
+                              "rightExpr":{
+                                "exprType":"stringLiteral",
+                                "value":"admin",
+                                "stos":[]}}},
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"设置 login_error to userName or Password is wrong 显示隐藏",
+                              "panelsToStates":[{
+                                  "panelPath":["c68855f796184db3b347493ea493ac8b"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":3,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":true,
+                                    "options":{
+                                      "compress":false}}}]}]},
+{
+                          "description":"loginBtn单击时，login success<br> (Else If 文字于 userName 等于 &quot;admin&quot; 和 文字于 Password 等于 &quot;admin&quot;)",
+                          "isNewIfGroup":false,
+                          "condition":{
+                            "exprType":"binaryOp",
+                            "op":"&&",
+                            "leftExpr":{
+                              "exprType":"binaryOp",
+                              "op":"==",
+                              "leftExpr":{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["a3b143b4b3684ceab9bfdd71076498cd"]}]},
+                              "rightExpr":{
+                                "exprType":"stringLiteral",
+                                "value":"admin",
+                                "stos":[]}},
+                            "rightExpr":{
+                              "exprType":"binaryOp",
+                              "op":"==",
+                              "leftExpr":{
+                                "exprType":"fcall",
+                                "functionName":"GetWidgetText",
+                                "arguments":[{
+                                    "exprType":"pathLiteral",
+                                    "isThis":false,
+                                    "isFocused":false,
+                                    "isTarget":false,
+                                    "value":["52c8a9c3ffc843f38486bfe9bd317aa1"]}]},
+                              "rightExpr":{
+                                "exprType":"stringLiteral",
+                                "value":"admin",
+                                "stos":[]}}},
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"Set Panel to State",
+                              "panelsToStates":[]},
+{
+                              "action":"fadeWidget",
+                              "description":"显示 登录进度条",
+                              "objectsToFades":[{
+                                  "objectPath":["a574cdcaeced4c1cb2617b6adbca5a3a"],
+                                  "fadeInfo":{
+                                    "fadeType":"show",
+                                    "options":{
+                                      "showType":"none"}}}]},
+{
+                              "action":"wait",
+                              "description":"等待2000毫秒",
+                              "waitTime":2000},
+{
+                              "action":"fadeWidget",
+                              "description":"隐藏 登录进度条",
+                              "objectsToFades":[{
+                                  "objectPath":["a574cdcaeced4c1cb2617b6adbca5a3a"],
+                                  "fadeInfo":{
+                                    "fadeType":"hide",
+                                    "options":{
+                                      "showType":"none"}}}]},
+{
+                              "action":"setPanelState",
+                              "description":"Set Panel to State",
+                              "panelsToStates":[]},
+{
+                              "action":"setPanelState",
+                              "description":"设置 登录面板 to 选择科室 显示隐藏",
+                              "panelsToStates":[{
+                                  "panelPath":["44c61f0cd16244119419b3cc8d098928"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":2,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":true,
+                                    "options":{
+                                      "compress":false}}}]}]}]}},
+                  "tabbable":true,
+                  "images":{
+                    "normal~":"images/login/loginbtn_u16.png"}},
+{
+                  "id":"c68855f796184db3b347493ea493ac8b",
+                  "label":"login_error",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"dynamicPanel",
+                  "styleType":"dynamicPanel",
+                  "visible":false,
+                  "style":{
+                    "location":{
+                      "x":80,
+                      "y":200},
+                    "size":{
+                      "width":200,
+                      "height":30},
+                    "visible":false},
+                  "adaptiveStyles":{
+},
+                  "scrollbars":"none",
+                  "fitToContent":false,
+                  "propagate":false,
+                  "diagrams":[{
+                      "id":"610d05a25c6e4b6ca1bae8b5a60663b4",
+                      "label":"userName is null",
+                      "type":"Axure:PanelDiagram",
+                      "objects":[{
+                          "id":"f5fb9b3618e74f96988b8419e579396b",
+                          "label":"",
+                          "parentDynamicPanel":"c68855f796184db3b347493ea493ac8b",
+                          "type":"buttonShape",
+                          "styleType":"buttonShape",
+                          "visible":true,
+                          "style":{
+                            "fontName":"'Applied Font Regular', 'Applied Font'",
+                            "horizontalAlignment":"left",
+                            "fill":{
+                              "fillType":"solid",
+                              "color":0xFFFFFF},
+                            "size":{
+                              "width":200,
+                              "height":30},
+                            "borderFill":{
+                              "fillType":"solid",
+                              "color":0x797979}},
+                          "adaptiveStyles":{
+},
+                          "objects":[{
+                              "id":"c854cc2606a84a809e6cb5945898b12c",
+                              "label":"",
+                              "isContained":true,
+                              "parentDynamicPanel":"c68855f796184db3b347493ea493ac8b",
+                              "type":"richTextPanel",
+                              "styleType":"paragraph",
+                              "visible":true,
+                              "style":{
+                                "fontName":"'Applied Font Regular', 'Applied Font'",
+                                "horizontalAlignment":"left",
+                                "fill":{
+                                  "fillType":"solid",
+                                  "color":0xFFFFFF},
+                                "size":{
+                                  "width":200,
+                                  "height":30},
+                                "borderFill":{
+                                  "fillType":"solid",
+                                  "color":0x797979}},
+                              "adaptiveStyles":{
+}}],
+                          "images":{
+                            "normal~":"resources/images/transparent.gif"}}]},
+{
+                      "id":"6ade0cfdb3fa4bf2a954c9dc8456a3d9",
+                      "label":"Password is null",
+                      "type":"Axure:PanelDiagram",
+                      "objects":[{
+                          "id":"1728694fd89d442c9e88f1caadf68df1",
+                          "label":"",
+                          "parentDynamicPanel":"c68855f796184db3b347493ea493ac8b",
+                          "type":"buttonShape",
+                          "styleType":"buttonShape",
+                          "visible":true,
+                          "style":{
+                            "fontName":"'Applied Font Regular', 'Applied Font'",
+                            "horizontalAlignment":"left",
+                            "fill":{
+                              "fillType":"solid",
+                              "color":0xFFFFFF},
+                            "size":{
+                              "width":200,
+                              "height":30},
+                            "borderFill":{
+                              "fillType":"solid",
+                              "color":0x797979}},
+                          "adaptiveStyles":{
+},
+                          "objects":[{
+                              "id":"db064fe12a544ca7b65f043958e67011",
+                              "label":"",
+                              "isContained":true,
+                              "parentDynamicPanel":"c68855f796184db3b347493ea493ac8b",
+                              "type":"richTextPanel",
+                              "styleType":"paragraph",
+                              "visible":true,
+                              "style":{
+                                "fontName":"'Applied Font Regular', 'Applied Font'",
+                                "horizontalAlignment":"left",
+                                "fill":{
+                                  "fillType":"solid",
+                                  "color":0xFFFFFF},
+                                "size":{
+                                  "width":200,
+                                  "height":30},
+                                "borderFill":{
+                                  "fillType":"solid",
+                                  "color":0x797979}},
+                              "adaptiveStyles":{
+}}],
+                          "images":{
+                            "normal~":"resources/images/transparent.gif"}}]},
+{
+                      "id":"a095f74f06f84e7d85f2a6c3a9f39b8f",
+                      "label":"userName or Password is wrong",
+                      "type":"Axure:PanelDiagram",
+                      "objects":[{
+                          "id":"904e48a0d6f9440a9a281e9465b51d2b",
+                          "label":"",
+                          "parentDynamicPanel":"c68855f796184db3b347493ea493ac8b",
+                          "type":"buttonShape",
+                          "styleType":"buttonShape",
+                          "visible":true,
+                          "style":{
+                            "fontName":"'Applied Font Regular', 'Applied Font'",
+                            "horizontalAlignment":"left",
+                            "fill":{
+                              "fillType":"solid",
+                              "color":0xFFFFFF},
+                            "size":{
+                              "width":200,
+                              "height":30},
+                            "borderFill":{
+                              "fillType":"solid",
+                              "color":0x797979}},
+                          "adaptiveStyles":{
+},
+                          "objects":[{
+                              "id":"e54c4c7351604a1ea4da5ccfeb261211",
+                              "label":"",
+                              "isContained":true,
+                              "parentDynamicPanel":"c68855f796184db3b347493ea493ac8b",
+                              "type":"richTextPanel",
+                              "styleType":"paragraph",
+                              "visible":true,
+                              "style":{
+                                "fontName":"'Applied Font Regular', 'Applied Font'",
+                                "horizontalAlignment":"left",
+                                "fill":{
+                                  "fillType":"solid",
+                                  "color":0xFFFFFF},
+                                "size":{
+                                  "width":200,
+                                  "height":30},
+                                "borderFill":{
+                                  "fillType":"solid",
+                                  "color":0x797979}},
+                              "adaptiveStyles":{
+}}],
+                          "images":{
+                            "normal~":"resources/images/transparent.gif"}}]},
+{
+                      "id":"047db9d8f2ef4093b5e486f7a30c39f2",
+                      "label":"hide error",
+                      "type":"Axure:PanelDiagram",
+                      "objects":[]}]}]},
+{
+              "id":"b237213e81b6473f860c766edc838175",
+              "label":"选择科室",
+              "type":"Axure:PanelDiagram",
+              "objects":[{
+                  "id":"d5a055bd23ce49608f47d537b21563fe",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"referenceDiagramObject",
+                  "styleType":"referenceDiagramObject",
+                  "visible":true,
+                  "style":{
+},
+                  "adaptiveStyles":{
+},
+                  "masterId":"1ea34248f44d492085137f67760438e1"},
+{
+                  "id":"af664896afd74dd392417f460327e612",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"buttonShape",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"20px",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFFFF,
+                      "opacity":1},
+                    "location":{
+                      "x":128,
+                      "y":13},
+                    "size":{
+                      "width":118,
+                      "height":24}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"615d8611ad024202abc1ee66f9610640",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"20px",
+                        "foreGroundFill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFFFF,
+                          "opacity":1},
+                        "location":{
+                          "x":128,
+                          "y":13},
+                        "size":{
+                          "width":118,
+                          "height":24}},
+                      "adaptiveStyles":{
+}}],
+                  "images":{
+                    "normal~":"resources/images/transparent.gif"}},
+{
+                  "id":"12c8e0b474c94fa384d48f019044501e",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"radioButton",
+                  "styleType":"radioButton",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"18px",
+                    "location":{
+                      "x":10,
+                      "y":70},
+                    "size":{
+                      "width":336,
+                      "height":22}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"b63ae97243cf4ce4a61cdbf8d68b60c5",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"18px",
+                        "location":{
+                          "x":10,
+                          "y":70},
+                        "size":{
+                          "width":336,
+                          "height":22}},
+                      "adaptiveStyles":{
+}}]},
+{
+                  "id":"6d6e0df4c8744af1bf348012e75bdc56",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"horizontalLine",
+                  "styleType":"horizontalLine",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":0,
+                      "y":92},
+                    "size":{
+                      "width":360,
+                      "height":10},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "images":{
+                    "start~":"resources/images/transparent.gif",
+                    "end~":"resources/images/transparent.gif",
+                    "line~":"images/login/u33_line.png"}},
+{
+                  "id":"eeae313fd5c24572952654a0ea3db5cb",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"radioButton",
+                  "styleType":"radioButton",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"18px",
+                    "location":{
+                      "x":10,
+                      "y":112},
+                    "size":{
+                      "width":336,
+                      "height":22}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"66030da37f824da8ad814befebc416a7",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"18px",
+                        "location":{
+                          "x":10,
+                          "y":112},
+                        "size":{
+                          "width":336,
+                          "height":22}},
+                      "adaptiveStyles":{
+}}]},
+{
+                  "id":"7399f3830f234bbeb50960ab317d37d2",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"horizontalLine",
+                  "styleType":"horizontalLine",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":0,
+                      "y":134},
+                    "size":{
+                      "width":360,
+                      "height":10},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "images":{
+                    "start~":"resources/images/transparent.gif",
+                    "end~":"resources/images/transparent.gif",
+                    "line~":"images/login/u33_line.png"}},
+{
+                  "id":"e7b75a3e74ff4073a3ccaf4c1512e067",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"radioButton",
+                  "styleType":"radioButton",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"18px",
+                    "location":{
+                      "x":12,
+                      "y":154},
+                    "size":{
+                      "width":336,
+                      "height":22}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"605ffbe3917e4877968851cdb6dd2342",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"18px",
+                        "location":{
+                          "x":12,
+                          "y":154},
+                        "size":{
+                          "width":336,
+                          "height":22}},
+                      "adaptiveStyles":{
+}}]},
+{
+                  "id":"cb186ff7ce1645ef8edb773dcc56181a",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"horizontalLine",
+                  "styleType":"horizontalLine",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":2,
+                      "y":176},
+                    "size":{
+                      "width":360,
+                      "height":10},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "images":{
+                    "start~":"resources/images/transparent.gif",
+                    "end~":"resources/images/transparent.gif",
+                    "line~":"images/login/u33_line.png"}},
+{
+                  "id":"f060f6fd10e346429f6d2c12d37e6a09",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"radioButton",
+                  "styleType":"radioButton",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"18px",
+                    "location":{
+                      "x":12,
+                      "y":196},
+                    "size":{
+                      "width":336,
+                      "height":22}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"315f3153107848f9ab17dd2c1bb48420",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"18px",
+                        "location":{
+                          "x":12,
+                          "y":196},
+                        "size":{
+                          "width":336,
+                          "height":22}},
+                      "adaptiveStyles":{
+}}]},
+{
+                  "id":"f88e0cca111d48378a93a6876df88aaa",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"horizontalLine",
+                  "styleType":"horizontalLine",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":0,
+                      "y":218},
+                    "size":{
+                      "width":360,
+                      "height":10},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "images":{
+                    "start~":"resources/images/transparent.gif",
+                    "end~":"resources/images/transparent.gif",
+                    "line~":"images/login/u33_line.png"}},
+{
+                  "id":"6b76c8ce014b4069900197f29c60b59a",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"radioButton",
+                  "styleType":"radioButton",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"18px",
+                    "location":{
+                      "x":11,
+                      "y":238},
+                    "size":{
+                      "width":336,
+                      "height":22}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"7af0850ed5f74781b47903c27df7ac77",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"18px",
+                        "location":{
+                          "x":11,
+                          "y":238},
+                        "size":{
+                          "width":336,
+                          "height":22}},
+                      "adaptiveStyles":{
+}}]},
+{
+                  "id":"1b1d2fe3cac2495289ed0f68612e0d76",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"horizontalLine",
+                  "styleType":"horizontalLine",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":0,
+                      "y":260},
+                    "size":{
+                      "width":360,
+                      "height":10},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "images":{
+                    "start~":"resources/images/transparent.gif",
+                    "end~":"resources/images/transparent.gif",
+                    "line~":"images/login/u33_line.png"}},
+{
+                  "id":"eacc9155cb364f74ac31b11cd7277583",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"radioButton",
+                  "styleType":"radioButton",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"18px",
+                    "location":{
+                      "x":11,
+                      "y":280},
+                    "size":{
+                      "width":336,
+                      "height":22}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"2fae8e44e63f4208a362184e799a28a9",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"18px",
+                        "location":{
+                          "x":11,
+                          "y":280},
+                        "size":{
+                          "width":336,
+                          "height":22}},
+                      "adaptiveStyles":{
+}}]},
+{
+                  "id":"7de59acefeea45f7a4452bb0453c93d4",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"horizontalLine",
+                  "styleType":"horizontalLine",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":0,
+                      "y":302},
+                    "size":{
+                      "width":360,
+                      "height":10},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "images":{
+                    "start~":"resources/images/transparent.gif",
+                    "end~":"resources/images/transparent.gif",
+                    "line~":"images/login/u33_line.png"}},
+{
+                  "id":"3a801e4473f34cacb37a926dc3a36da6",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"radioButton",
+                  "styleType":"radioButton",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"18px",
+                    "location":{
+                      "x":13,
+                      "y":322},
+                    "size":{
+                      "width":336,
+                      "height":22}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"dd94d5f104334cf986f2089294f1e927",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"18px",
+                        "location":{
+                          "x":13,
+                          "y":322},
+                        "size":{
+                          "width":336,
+                          "height":22}},
+                      "adaptiveStyles":{
+}}]},
+{
+                  "id":"a2f19edf5a7f424eb47b762c45260990",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"horizontalLine",
+                  "styleType":"horizontalLine",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":0,
+                      "y":344},
+                    "size":{
+                      "width":360,
+                      "height":10},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "images":{
+                    "start~":"resources/images/transparent.gif",
+                    "end~":"resources/images/transparent.gif",
+                    "line~":"images/login/u33_line.png"}},
+{
+                  "id":"6d33738489fc45ea93084df68579046b",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"radioButton",
+                  "styleType":"radioButton",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"18px",
+                    "location":{
+                      "x":13,
+                      "y":364},
+                    "size":{
+                      "width":336,
+                      "height":22}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"c48bfc79f31e43ac84ef89dac7caae2e",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"18px",
+                        "location":{
+                          "x":13,
+                          "y":364},
+                        "size":{
+                          "width":336,
+                          "height":22}},
+                      "adaptiveStyles":{
+}}]},
+{
+                  "id":"3d7fc3b5fd064eea862d8c192f2f703f",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"horizontalLine",
+                  "styleType":"horizontalLine",
+                  "visible":true,
+                  "style":{
+                    "location":{
+                      "x":0,
+                      "y":386},
+                    "size":{
+                      "width":360,
+                      "height":10},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0xFFCCCCCC}},
+                  "adaptiveStyles":{
+},
+                  "images":{
+                    "start~":"resources/images/transparent.gif",
+                    "end~":"resources/images/transparent.gif",
+                    "line~":"images/login/u33_line.png"}},
+{
+                  "id":"5c4eff154e1e4fc1b56b90e6c023d0f3",
+                  "label":"",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"buttonShape",
+                  "styleType":"buttonShape",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "fontSize":"18px",
+                    "foreGroundFill":{
+                      "fillType":"solid",
+                      "color":0xFFFFFFFF,
+                      "opacity":1},
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFF6699FF},
+                    "location":{
+                      "x":0,
+                      "y":530},
+                    "size":{
+                      "width":360,
+                      "height":40},
+                    "borderFill":{
+                      "fillType":"solid",
+                      "color":0x797979},
+                    "cornerRadiusTopLeft":"5"},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"aea8326c2b5a41c5a04f81d2d9628f46",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "fontSize":"18px",
+                        "foreGroundFill":{
+                          "fillType":"solid",
+                          "color":0xFFFFFFFF,
+                          "opacity":1},
+                        "fill":{
+                          "fillType":"solid",
+                          "color":0xFF6699FF},
+                        "location":{
+                          "x":0,
+                          "y":530},
+                        "size":{
+                          "width":360,
+                          "height":40},
+                        "borderFill":{
+                          "fillType":"solid",
+                          "color":0x797979},
+                        "cornerRadiusTopLeft":"5"},
+                      "adaptiveStyles":{
+}}],
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"确认按钮点击时",
+                          "isNewIfGroup":false,
+                          "actions":[{
+                              "action":"linkWindow",
+                              "description":"在 当前窗口 打开 Home",
+                              "target":{
+                                "targetType":"page",
+                                "url":"home.html",
+                                "includeVariables":true},
+                              "linkType":"current"}]}]}},
+                  "tabbable":true,
+                  "images":{
+                    "normal~":"images/login/u55.png"}},
+{
+                  "id":"c2106c999f2b41fcad001021169a79ac",
+                  "label":"backImage1",
+                  "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                  "type":"imageBox",
+                  "styleType":"imageBox",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'Applied Font Regular', 'Applied Font'",
+                    "location":{
+                      "x":10,
+                      "y":10},
+                    "size":{
+                      "width":36,
+                      "height":30}},
+                  "adaptiveStyles":{
+},
+                  "objects":[{
+                      "id":"dfe174ee4ad145eaaaf0221af87625b4",
+                      "label":"",
+                      "isContained":true,
+                      "parentDynamicPanel":"44c61f0cd16244119419b3cc8d098928",
+                      "type":"richTextPanel",
+                      "styleType":"paragraph",
+                      "visible":true,
+                      "style":{
+                        "fontName":"'Applied Font Regular', 'Applied Font'",
+                        "location":{
+                          "x":10,
+                          "y":10},
+                        "size":{
+                          "width":36,
+                          "height":30}},
+                      "adaptiveStyles":{
+}}],
+                  "interactionMap":{
+                    "onClick":{
+                      "description":"OnClick",
+                      "cases":[{
+                          "description":"选择科室返回按钮<br> (If 值于 dept 等于 &quot;&quot;)",
+                          "isNewIfGroup":false,
+                          "condition":{
+                            "exprType":"binaryOp",
+                            "op":"==",
+                            "leftExpr":{
+                              "exprType":"fcall",
+                              "functionName":"GetGlobalVariableValue",
+                              "arguments":[{
+                                  "exprType":"globalVariableLiteral",
+                                  "variableName":"dept"}]},
+                            "rightExpr":{
+                              "exprType":"stringLiteral",
+                              "value":"",
+                              "stos":[]}},
+                          "actions":[{
+                              "action":"setPanelState",
+                              "description":"设置 登录面板 to 登录账号 显示隐藏",
+                              "panelsToStates":[{
+                                  "panelPath":["44c61f0cd16244119419b3cc8d098928"],
+                                  "stateInfo":{
+                                    "setStateType":"diagram",
+                                    "stateNumber":1,
+                                    "stateValue":{
+                                      "exprType":"stringLiteral",
+                                      "value":"1",
+                                      "stos":[]},
+                                    "loop":false,
+                                    "showWhenSet":true,
+                                    "options":{
+                                      "compress":false}}}]}]},
+{
+                          "description":"用例 1<br> (Else If 值于 dept 等于 &quot;科室&quot;)",
+                          "isNewIfGroup":false,
+                          "condition":{
+                            "exprType":"binaryOp",
+                            "op":"==",
+                            "leftExpr":{
+                              "exprType":"fcall",
+                              "functionName":"GetGlobalVariableValue",
+                              "arguments":[{
+                                  "exprType":"globalVariableLiteral",
+                                  "variableName":"dept"}]},
+                            "rightExpr":{
+                              "exprType":"stringLiteral",
+                              "value":"科室",
+                              "stos":[]}},
+                          "actions":[{
+                              "action":"setFunction",
+                              "description":"设置 值于 home = &quot;home&quot;",
+                              "expr":{
+                                "exprType":"block",
+                                "subExprs":[{
+                                    "exprType":"fcall",
+                                    "functionName":"SetGlobalVariableValue",
+                                    "arguments":[{
+                                        "exprType":"globalVariableLiteral",
+                                        "variableName":"home"},
+{
+                                        "exprType":"stringLiteral",
+                                        "value":"home",
+                                        "stos":[]}]}]}},
+{
+                              "action":"linkWindow",
+                              "description":"在 当前窗口 打开 Home",
+                              "target":{
+                                "targetType":"page",
+                                "url":"home.html",
+                                "includeVariables":true},
+                              "linkType":"current"}]}]}},
+                  "tabbable":true,
+                  "images":{
+                    "normal~":"images/login/backimage1_u57.png"}}]}]},
+{
+          "id":"a574cdcaeced4c1cb2617b6adbca5a3a",
+          "label":"登录进度条",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":false,
+          "style":{
+            "fontName":"'Applied Font Regular', 'Applied Font'",
+            "location":{
+              "x":216,
+              "y":407},
+            "size":{
+              "width":36,
+              "height":36},
+            "visible":false,
+            "borderWidth":"-1",
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF000000}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"e3ca298c50ed4174a01fba555d3a3e24",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":false,
+              "style":{
+                "fontName":"'Applied Font Regular', 'Applied Font'",
+                "location":{
+                  "x":216,
+                  "y":407},
+                "size":{
+                  "width":36,
+                  "height":36},
+                "visible":false,
+                "borderWidth":"-1",
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFF000000}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/login/登录进度条_u59.gif"}}]}},
+  "masters":{
+    "2d7d071180014c38b40748006bf62620":{
+      "packageId":"2d7d071180014c38b40748006bf62620",
+      "type":"Axure:Master",
+      "name":"phone",
+      "notes":{
+},
+      "style":{
+        "baseStyle":"627587b6038d43cca051c114ac41ad32",
+        "pageAlignment":"near",
+        "fill":{
+          "fillType":"solid",
+          "color":0xFFFFFFFF},
+        "image":null,
+        "imageHorizontalAlignment":"near",
+        "imageVerticalAlignment":"near",
+        "imageRepeat":"auto",
+        "favicon":null,
+        "sketchFactor":"0",
+        "colorStyle":"appliedColor",
+        "fontName":"应用字体",
+        "borderWidth":"0"},
+      "adaptiveStyles":{
+},
+      "interactionMap":{
+},
+      "diagram":{
+        "objects":[{
+            "id":"d99712befac24279b86a34aae3f33907",
+            "label":"",
+            "type":"imageBox",
+            "styleType":"imageBox",
+            "visible":true,
+            "style":{
+              "fontName":"'Applied Font Regular', 'Applied Font'",
+              "location":{
+                "x":10,
+                "y":0},
+              "size":{
+                "width":429,
+                "height":839},
+              "borderWidth":"-1",
+              "borderFill":{
+                "fillType":"solid",
+                "color":0xFF000000}},
+            "adaptiveStyles":{
+},
+            "objects":[{
+                "id":"dabd537881e345b2b281223650e11a9a",
+                "label":"",
+                "isContained":true,
+                "type":"richTextPanel",
+                "styleType":"paragraph",
+                "visible":true,
+                "style":{
+                  "fontName":"'Applied Font Regular', 'Applied Font'",
+                  "location":{
+                    "x":10,
+                    "y":0},
+                  "size":{
+                    "width":429,
+                    "height":839},
+                  "borderWidth":"-1",
+                  "borderFill":{
+                    "fillType":"solid",
+                    "color":0xFF000000}},
+                "adaptiveStyles":{
+}}],
+            "images":{
+              "normal~":"images/login/u1.png"}},
+{
+            "id":"f5852b1d91914e1a8d59b0e4edf121c0",
+            "label":"",
+            "type":"imageBox",
+            "styleType":"imageBox",
+            "visible":true,
+            "style":{
+              "fontName":"'Applied Font Regular', 'Applied Font'",
+              "location":{
+                "x":44,
+                "y":105},
+              "size":{
+                "width":360,
+                "height":25},
+              "borderWidth":"-1",
+              "borderFill":{
+                "fillType":"solid",
+                "color":0xFF000000}},
+            "adaptiveStyles":{
+},
+            "objects":[{
+                "id":"030da254b08b4dd5aab2d7d95f4f332f",
+                "label":"",
+                "isContained":true,
+                "type":"richTextPanel",
+                "styleType":"paragraph",
+                "visible":true,
+                "style":{
+                  "fontName":"'Applied Font Regular', 'Applied Font'",
+                  "location":{
+                    "x":44,
+                    "y":105},
+                  "size":{
+                    "width":360,
+                    "height":25},
+                  "borderWidth":"-1",
+                  "borderFill":{
+                    "fillType":"solid",
+                    "color":0xFF000000}},
+                "adaptiveStyles":{
+}}],
+            "images":{
+              "normal~":"images/login/u3.png"}},
+{
+            "id":"9e71f397c87f4f62a605868be6c8312d",
+            "label":"",
+            "type":"imageBox",
+            "styleType":"imageBox",
+            "visible":true,
+            "style":{
+              "fontName":"'Applied Font Regular', 'Applied Font'",
+              "location":{
+                "x":44,
+                "y":699},
+              "size":{
+                "width":360,
+                "height":48},
+              "borderWidth":"-1",
+              "borderFill":{
+                "fillType":"solid",
+                "color":0xFF000000}},
+            "adaptiveStyles":{
+},
+            "objects":[{
+                "id":"24b95faa0fb44d3ab597259c3c24d1f6",
+                "label":"",
+                "isContained":true,
+                "type":"richTextPanel",
+                "styleType":"paragraph",
+                "visible":true,
+                "style":{
+                  "fontName":"'Applied Font Regular', 'Applied Font'",
+                  "location":{
+                    "x":44,
+                    "y":699},
+                  "size":{
+                    "width":360,
+                    "height":48},
+                  "borderWidth":"-1",
+                  "borderFill":{
+                    "fillType":"solid",
+                    "color":0xFF000000}},
+                "adaptiveStyles":{
+}}],
+            "images":{
+              "normal~":"images/login/u5.png"}},
+{
+            "id":"26b91ea1ca154fdca046593f0212a0ca",
+            "label":"",
+            "type":"buttonShape",
+            "styleType":"buttonShape",
+            "visible":true,
+            "style":{
+              "fontName":"'Applied Font Regular', 'Applied Font'",
+              "fill":{
+                "fillType":"linearGradient",
+                "colors":[{
+                    "color":0xFFE8E8E8},
+{
+                    "color":0xFFE8E8E8},
+{
+                    "color":0xFFF7F7F7},
+{
+                    "color":0xFFF7F7F7}]},
+              "location":{
+                "x":44,
+                "y":129},
+              "size":{
+                "width":360,
+                "height":570},
+              "borderFill":{
+                "fillType":"solid",
+                "color":0xFFFFFF}},
+            "adaptiveStyles":{
+},
+            "objects":[{
+                "id":"47bd1d8a565c48b29534a6b0c7960e69",
+                "label":"",
+                "isContained":true,
+                "type":"richTextPanel",
+                "styleType":"paragraph",
+                "visible":true,
+                "style":{
+                  "fontName":"'Applied Font Regular', 'Applied Font'",
+                  "fill":{
+                    "fillType":"linearGradient",
+                    "colors":[{
+                        "color":0xFFE8E8E8},
+{
+                        "color":0xFFE8E8E8},
+{
+                        "color":0xFFF7F7F7},
+{
+                        "color":0xFFF7F7F7}]},
+                  "location":{
+                    "x":44,
+                    "y":129},
+                  "size":{
+                    "width":360,
+                    "height":570},
+                  "borderFill":{
+                    "fillType":"solid",
+                    "color":0xFFFFFF}},
+                "adaptiveStyles":{
+}}],
+            "images":{
+              "normal~":"images/login/u7.png"}}]}},
+    "1ea34248f44d492085137f67760438e1":{
+      "packageId":"1ea34248f44d492085137f67760438e1",
+      "type":"Axure:Master",
+      "name":"title bar",
+      "notes":{
+},
+      "style":{
+        "baseStyle":"627587b6038d43cca051c114ac41ad32",
+        "pageAlignment":"near",
+        "fill":{
+          "fillType":"solid",
+          "color":0xFFFFFFFF},
+        "image":null,
+        "imageHorizontalAlignment":"near",
+        "imageVerticalAlignment":"near",
+        "imageRepeat":"auto",
+        "favicon":null,
+        "sketchFactor":"0",
+        "colorStyle":"appliedColor",
+        "fontName":"应用字体",
+        "borderWidth":"0"},
+      "adaptiveStyles":{
+},
+      "interactionMap":{
+},
+      "diagram":{
+        "objects":[{
+            "id":"d750205dfa844b70b5b3ad869389d788",
+            "label":"",
+            "type":"dynamicPanel",
+            "styleType":"dynamicPanel",
+            "visible":true,
+            "style":{
+              "size":{
+                "width":360,
+                "height":50}},
+            "adaptiveStyles":{
+},
+            "scrollbars":"none",
+            "fitToContent":false,
+            "propagate":false,
+            "diagrams":[{
+                "id":"896d8fd6c6064b03a75ffed395618908",
+                "label":"State1",
+                "type":"Axure:PanelDiagram",
+                "objects":[]}]},
+{
+            "id":"1c28d63618b14ffbbdc34c128b91e493",
+            "label":"",
+            "type":"buttonShape",
+            "styleType":"buttonShape",
+            "visible":true,
+            "style":{
+              "fontName":"'Applied Font Regular', 'Applied Font'",
+              "fill":{
+                "fillType":"solid",
+                "color":0xFF009DD9},
+              "size":{
+                "width":360,
+                "height":50}},
+            "adaptiveStyles":{
+},
+            "objects":[{
+                "id":"5f2b8ec27df740dd90020671b0016766",
+                "label":"",
+                "isContained":true,
+                "type":"richTextPanel",
+                "styleType":"paragraph",
+                "visible":true,
+                "style":{
+                  "fontName":"'Applied Font Regular', 'Applied Font'",
+                  "fill":{
+                    "fillType":"solid",
+                    "color":0xFF009DD9},
+                  "size":{
+                    "width":360,
+                    "height":50}},
+                "adaptiveStyles":{
+}}],
+            "images":{
+              "normal~":"images/login/u27.png"}}]}}},
+  "objectPaths":{
+    "5a01e12e967546aeb1bc80c3da262a5e":{
+      "scriptId":"u0",
+      "d99712befac24279b86a34aae3f33907":{
+        "scriptId":"u1"},
+      "dabd537881e345b2b281223650e11a9a":{
+        "scriptId":"u2"},
+      "f5852b1d91914e1a8d59b0e4edf121c0":{
+        "scriptId":"u3"},
+      "030da254b08b4dd5aab2d7d95f4f332f":{
+        "scriptId":"u4"},
+      "9e71f397c87f4f62a605868be6c8312d":{
+        "scriptId":"u5"},
+      "24b95faa0fb44d3ab597259c3c24d1f6":{
+        "scriptId":"u6"},
+      "26b91ea1ca154fdca046593f0212a0ca":{
+        "scriptId":"u7"},
+      "47bd1d8a565c48b29534a6b0c7960e69":{
+        "scriptId":"u8"}},
+    "44c61f0cd16244119419b3cc8d098928":{
+      "scriptId":"u9"},
+    "2725c5daf7f3464b92f8f443165cfa62":{
+      "scriptId":"u10"},
+    "b23c32c649924109a361dcdb3847ef24":{
+      "scriptId":"u11"},
+    "f0454d1cd1604a389f8ca07d3f9a3909":{
+      "scriptId":"u12"},
+    "9256859335a248c5bfdd5fed65c6fed2":{
+      "scriptId":"u13"},
+    "a3b143b4b3684ceab9bfdd71076498cd":{
+      "scriptId":"u14"},
+    "52c8a9c3ffc843f38486bfe9bd317aa1":{
+      "scriptId":"u15"},
+    "bb1084531e74439b94fb4d2447b54863":{
+      "scriptId":"u16"},
+    "850eb54e38954378a9c77db2c3011d6b":{
+      "scriptId":"u17"},
+    "c68855f796184db3b347493ea493ac8b":{
+      "scriptId":"u18"},
+    "f5fb9b3618e74f96988b8419e579396b":{
+      "scriptId":"u19"},
+    "c854cc2606a84a809e6cb5945898b12c":{
+      "scriptId":"u20"},
+    "1728694fd89d442c9e88f1caadf68df1":{
+      "scriptId":"u21"},
+    "db064fe12a544ca7b65f043958e67011":{
+      "scriptId":"u22"},
+    "904e48a0d6f9440a9a281e9465b51d2b":{
+      "scriptId":"u23"},
+    "e54c4c7351604a1ea4da5ccfeb261211":{
+      "scriptId":"u24"},
+    "d5a055bd23ce49608f47d537b21563fe":{
+      "scriptId":"u25",
+      "d750205dfa844b70b5b3ad869389d788":{
+        "scriptId":"u26"},
+      "1c28d63618b14ffbbdc34c128b91e493":{
+        "scriptId":"u27"},
+      "5f2b8ec27df740dd90020671b0016766":{
+        "scriptId":"u28"}},
+    "af664896afd74dd392417f460327e612":{
+      "scriptId":"u29"},
+    "615d8611ad024202abc1ee66f9610640":{
+      "scriptId":"u30"},
+    "12c8e0b474c94fa384d48f019044501e":{
+      "scriptId":"u31"},
+    "b63ae97243cf4ce4a61cdbf8d68b60c5":{
+      "scriptId":"u32"},
+    "6d6e0df4c8744af1bf348012e75bdc56":{
+      "scriptId":"u33"},
+    "eeae313fd5c24572952654a0ea3db5cb":{
+      "scriptId":"u34"},
+    "66030da37f824da8ad814befebc416a7":{
+      "scriptId":"u35"},
+    "7399f3830f234bbeb50960ab317d37d2":{
+      "scriptId":"u36"},
+    "e7b75a3e74ff4073a3ccaf4c1512e067":{
+      "scriptId":"u37"},
+    "605ffbe3917e4877968851cdb6dd2342":{
+      "scriptId":"u38"},
+    "cb186ff7ce1645ef8edb773dcc56181a":{
+      "scriptId":"u39"},
+    "f060f6fd10e346429f6d2c12d37e6a09":{
+      "scriptId":"u40"},
+    "315f3153107848f9ab17dd2c1bb48420":{
+      "scriptId":"u41"},
+    "f88e0cca111d48378a93a6876df88aaa":{
+      "scriptId":"u42"},
+    "6b76c8ce014b4069900197f29c60b59a":{
+      "scriptId":"u43"},
+    "7af0850ed5f74781b47903c27df7ac77":{
+      "scriptId":"u44"},
+    "1b1d2fe3cac2495289ed0f68612e0d76":{
+      "scriptId":"u45"},
+    "eacc9155cb364f74ac31b11cd7277583":{
+      "scriptId":"u46"},
+    "2fae8e44e63f4208a362184e799a28a9":{
+      "scriptId":"u47"},
+    "7de59acefeea45f7a4452bb0453c93d4":{
+      "scriptId":"u48"},
+    "3a801e4473f34cacb37a926dc3a36da6":{
+      "scriptId":"u49"},
+    "dd94d5f104334cf986f2089294f1e927":{
+      "scriptId":"u50"},
+    "a2f19edf5a7f424eb47b762c45260990":{
+      "scriptId":"u51"},
+    "6d33738489fc45ea93084df68579046b":{
+      "scriptId":"u52"},
+    "c48bfc79f31e43ac84ef89dac7caae2e":{
+      "scriptId":"u53"},
+    "3d7fc3b5fd064eea862d8c192f2f703f":{
+      "scriptId":"u54"},
+    "5c4eff154e1e4fc1b56b90e6c023d0f3":{
+      "scriptId":"u55"},
+    "aea8326c2b5a41c5a04f81d2d9628f46":{
+      "scriptId":"u56"},
+    "c2106c999f2b41fcad001021169a79ac":{
+      "scriptId":"u57"},
+    "dfe174ee4ad145eaaaf0221af87625b4":{
+      "scriptId":"u58"},
+    "a574cdcaeced4c1cb2617b6adbca5a3a":{
+      "scriptId":"u59"},
+    "e3ca298c50ed4174a01fba555d3a3e24":{
+      "scriptId":"u60"}}});
